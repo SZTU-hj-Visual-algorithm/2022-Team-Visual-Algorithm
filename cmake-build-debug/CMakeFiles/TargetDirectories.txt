@@ -1,0 +1,3 @@
+/home/liyankuan/a_miaosuan_v7.42/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/liyankuan/a_miaosuan_v7.42/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/liyankuan/a_miaosuan_v7.42/cmake-build-debug/CMakeFiles/run.dir
