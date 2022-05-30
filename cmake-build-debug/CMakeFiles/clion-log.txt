@@ -1,4 +1,4 @@
-/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/liyankuan/a_miaosuan_v7.42
+/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/liyankuan/CLionProjects/视觉有大符最新代码
 -- The C compiler identification is GNU 9.4.0
 -- The CXX compiler identification is GNU 9.4.0
 -- Check for working C compiler: /usr/bin/cc
@@ -36,4 +36,4 @@
 --     include path11: 
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/liyankuan/a_miaosuan_v7.42/cmake-build-debug
+-- Build files have been written to: /home/liyankuan/CLionProjects/视觉有大符最新代码/cmake-build-debug

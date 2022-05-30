@@ -6,5 +6,5 @@ CXX_FLAGS =  -pthread -g   -std=c++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/eigen3 -I/home/liyankuan/a_miaosuan_v7.42/include -I/home/liyankuan/a_miaosuan_v7.42/include/camera -isystem /usr/include/opencv 
+CXX_INCLUDES = -I/usr/include/eigen3 -I/home/liyankuan/CLionProjects/视觉有大符最新代码/include -I/home/liyankuan/CLionProjects/视觉有大符最新代码/include/camera -isystem /usr/include/opencv 
 

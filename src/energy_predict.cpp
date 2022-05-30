@@ -100,31 +100,52 @@ energy_pre::energy_pre(ArmorDetector &armor)
 	this->enermy_color = armor.enermy_color;
 }
 
-double energy_pre::predict(double t, double dt, bool pre_not)
+double energy_pre::predict(double t, double dt, bool pre_not, bool samll_energy)
 {
-	if (pre_not)
+	if (samll_energy)
 	{
-		double F1 = 0.913 * sin(1.942 * t) + 1.177;
-		double F2 = 1.177 * t - 913.0000 * cos(0.971 * t) * cos(0.971 * t) / 971.000 + 913.000 / 971.000;
-		F = 1 + F1 * dt / F2;
+		if (pre_not)
+		{
+			F = 1 + dt/t;
+			angle_k = F*angle_k;
+			angle_k_1 = angle_k-start_angle;
+			return angle_k_1;
+		}
+		else
+		{
+			t = (t+t+dt)/2;
+			F = 1 + dt/t;
+			return F*angle_k - start_angle;
+		}
 		
-		angle_k = F*angle_k;
-		angle_k_1 = angle_k - start_angle;
-//		angle_k_1 = F*angle_k_1;
-		return angle_k_1;
 	}
 	else
 	{
-		t = (t + t + dt) / 2;
-		double F1 = 0.913 * sin(1.942 * t) + 1.177;
-		double F2 = 1.177 * t - ((913.00000 * cos(0.971 * t) * cos(0.971 * t)) / 971.0000)+ (913.00000 / 971.00000);
-		//std::cout << "时间" << t << std::endl;
-		//std::cout << "F2" << F2 << std::endl;
-		F = 1 + F1 * dt / F2;
-		//std::cout << "F" << F << std::endl;
-		//让预测不影响卡尔曼的迭代
-		return F * angle_k - start_angle;
+		if (pre_not)
+		{
+			double F1 = 0.913 * sin(1.942 * t) + 1.177;
+			double F2 = 1.177 * t - 913.0000 * cos(0.971 * t) * cos(0.971 * t) / 971.000 + 913.000 / 971.000;
+			F = 1 + F1 * dt / F2;
+			
+			angle_k = F*angle_k;
+			angle_k_1 = angle_k - start_angle;
+//		angle_k_1 = F*angle_k_1;
+			return angle_k_1;
+		}
+		else
+		{
+			t = (t + t + dt) / 2;
+			double F1 = 0.913 * sin(1.942 * t) + 1.177;
+			double F2 = 1.177 * t - ((913.00000 * cos(0.971 * t) * cos(0.971 * t)) / 971.0000)+ (913.00000 / 971.00000);
+			//std::cout << "时间" << t << std::endl;
+			//std::cout << "F2" << F2 << std::endl;
+			F = 1 + F1 * dt / F2;
+			//std::cout << "F" << F << std::endl;
+			//让预测不影响卡尔曼的迭代
+			return F * angle_k - start_angle;
+		}
 	}
+	
 }
 
 double energy_pre::correct(double measure)//这里先不管了，以后再想，摆了

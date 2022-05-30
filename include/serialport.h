@@ -79,7 +79,7 @@ public:
     SerialPort(char const *portpath);
     void reload(char const *portpath);
     bool initSerialPort();
-    bool get_Mode1(int &mode, float &pitch, float &yaw, float &roll, float &ball_speed/*, float &color*/);
+    bool get_Mode1(int &mode, float &pitch, float &yaw, float &roll, float &ball_speed, int &color);
 	void TransformData(const VisionData &data); //主要方案
 	void send();
 	void closePort();

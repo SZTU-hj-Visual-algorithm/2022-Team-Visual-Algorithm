@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liyankuan/a_miaosuan_v7.42
+CMAKE_SOURCE_DIR = /home/liyankuan/CLionProjects/视觉有大符最新代码
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liyankuan/a_miaosuan_v7.42/cmake-build-debug
+CMAKE_BINARY_DIR = /home/liyankuan/CLionProjects/视觉有大符最新代码/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/run.dir/depend.make
@@ -59,133 +59,133 @@ include CMakeFiles/run.dir/flags.make
 
 CMakeFiles/run.dir/main4.cpp.o: CMakeFiles/run.dir/flags.make
 CMakeFiles/run.dir/main4.cpp.o: ../main4.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyankuan/a_miaosuan_v7.42/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/run.dir/main4.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/main4.cpp.o -c /home/liyankuan/a_miaosuan_v7.42/main4.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyankuan/CLionProjects/视觉有大符最新代码/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/run.dir/main4.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/main4.cpp.o -c /home/liyankuan/CLionProjects/视觉有大符最新代码/main4.cpp
 
 CMakeFiles/run.dir/main4.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/main4.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyankuan/a_miaosuan_v7.42/main4.cpp > CMakeFiles/run.dir/main4.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyankuan/CLionProjects/视觉有大符最新代码/main4.cpp > CMakeFiles/run.dir/main4.cpp.i
 
 CMakeFiles/run.dir/main4.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/main4.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyankuan/a_miaosuan_v7.42/main4.cpp -o CMakeFiles/run.dir/main4.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyankuan/CLionProjects/视觉有大符最新代码/main4.cpp -o CMakeFiles/run.dir/main4.cpp.s
 
 CMakeFiles/run.dir/src/ArmorDetector.cpp.o: CMakeFiles/run.dir/flags.make
 CMakeFiles/run.dir/src/ArmorDetector.cpp.o: ../src/ArmorDetector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyankuan/a_miaosuan_v7.42/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/run.dir/src/ArmorDetector.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/src/ArmorDetector.cpp.o -c /home/liyankuan/a_miaosuan_v7.42/src/ArmorDetector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyankuan/CLionProjects/视觉有大符最新代码/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/run.dir/src/ArmorDetector.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/src/ArmorDetector.cpp.o -c /home/liyankuan/CLionProjects/视觉有大符最新代码/src/ArmorDetector.cpp
 
 CMakeFiles/run.dir/src/ArmorDetector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/ArmorDetector.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyankuan/a_miaosuan_v7.42/src/ArmorDetector.cpp > CMakeFiles/run.dir/src/ArmorDetector.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyankuan/CLionProjects/视觉有大符最新代码/src/ArmorDetector.cpp > CMakeFiles/run.dir/src/ArmorDetector.cpp.i
 
 CMakeFiles/run.dir/src/ArmorDetector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/ArmorDetector.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyankuan/a_miaosuan_v7.42/src/ArmorDetector.cpp -o CMakeFiles/run.dir/src/ArmorDetector.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyankuan/CLionProjects/视觉有大符最新代码/src/ArmorDetector.cpp -o CMakeFiles/run.dir/src/ArmorDetector.cpp.s
 
 CMakeFiles/run.dir/src/CRC_Check.cpp.o: CMakeFiles/run.dir/flags.make
 CMakeFiles/run.dir/src/CRC_Check.cpp.o: ../src/CRC_Check.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyankuan/a_miaosuan_v7.42/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/run.dir/src/CRC_Check.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/src/CRC_Check.cpp.o -c /home/liyankuan/a_miaosuan_v7.42/src/CRC_Check.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyankuan/CLionProjects/视觉有大符最新代码/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/run.dir/src/CRC_Check.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/src/CRC_Check.cpp.o -c /home/liyankuan/CLionProjects/视觉有大符最新代码/src/CRC_Check.cpp
 
 CMakeFiles/run.dir/src/CRC_Check.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/CRC_Check.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyankuan/a_miaosuan_v7.42/src/CRC_Check.cpp > CMakeFiles/run.dir/src/CRC_Check.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyankuan/CLionProjects/视觉有大符最新代码/src/CRC_Check.cpp > CMakeFiles/run.dir/src/CRC_Check.cpp.i
 
 CMakeFiles/run.dir/src/CRC_Check.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/CRC_Check.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyankuan/a_miaosuan_v7.42/src/CRC_Check.cpp -o CMakeFiles/run.dir/src/CRC_Check.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyankuan/CLionProjects/视觉有大符最新代码/src/CRC_Check.cpp -o CMakeFiles/run.dir/src/CRC_Check.cpp.s
 
 CMakeFiles/run.dir/src/KAL.cpp.o: CMakeFiles/run.dir/flags.make
 CMakeFiles/run.dir/src/KAL.cpp.o: ../src/KAL.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyankuan/a_miaosuan_v7.42/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/run.dir/src/KAL.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/src/KAL.cpp.o -c /home/liyankuan/a_miaosuan_v7.42/src/KAL.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyankuan/CLionProjects/视觉有大符最新代码/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/run.dir/src/KAL.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/src/KAL.cpp.o -c /home/liyankuan/CLionProjects/视觉有大符最新代码/src/KAL.cpp
 
 CMakeFiles/run.dir/src/KAL.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/KAL.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyankuan/a_miaosuan_v7.42/src/KAL.cpp > CMakeFiles/run.dir/src/KAL.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyankuan/CLionProjects/视觉有大符最新代码/src/KAL.cpp > CMakeFiles/run.dir/src/KAL.cpp.i
 
 CMakeFiles/run.dir/src/KAL.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/KAL.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyankuan/a_miaosuan_v7.42/src/KAL.cpp -o CMakeFiles/run.dir/src/KAL.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyankuan/CLionProjects/视觉有大符最新代码/src/KAL.cpp -o CMakeFiles/run.dir/src/KAL.cpp.s
 
 CMakeFiles/run.dir/src/Thread.cpp.o: CMakeFiles/run.dir/flags.make
 CMakeFiles/run.dir/src/Thread.cpp.o: ../src/Thread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyankuan/a_miaosuan_v7.42/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/run.dir/src/Thread.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/src/Thread.cpp.o -c /home/liyankuan/a_miaosuan_v7.42/src/Thread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyankuan/CLionProjects/视觉有大符最新代码/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/run.dir/src/Thread.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/src/Thread.cpp.o -c /home/liyankuan/CLionProjects/视觉有大符最新代码/src/Thread.cpp
 
 CMakeFiles/run.dir/src/Thread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/Thread.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyankuan/a_miaosuan_v7.42/src/Thread.cpp > CMakeFiles/run.dir/src/Thread.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyankuan/CLionProjects/视觉有大符最新代码/src/Thread.cpp > CMakeFiles/run.dir/src/Thread.cpp.i
 
 CMakeFiles/run.dir/src/Thread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/Thread.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyankuan/a_miaosuan_v7.42/src/Thread.cpp -o CMakeFiles/run.dir/src/Thread.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyankuan/CLionProjects/视觉有大符最新代码/src/Thread.cpp -o CMakeFiles/run.dir/src/Thread.cpp.s
 
 CMakeFiles/run.dir/src/camera.cpp.o: CMakeFiles/run.dir/flags.make
 CMakeFiles/run.dir/src/camera.cpp.o: ../src/camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyankuan/a_miaosuan_v7.42/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/run.dir/src/camera.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/src/camera.cpp.o -c /home/liyankuan/a_miaosuan_v7.42/src/camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyankuan/CLionProjects/视觉有大符最新代码/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/run.dir/src/camera.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/src/camera.cpp.o -c /home/liyankuan/CLionProjects/视觉有大符最新代码/src/camera.cpp
 
 CMakeFiles/run.dir/src/camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/camera.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyankuan/a_miaosuan_v7.42/src/camera.cpp > CMakeFiles/run.dir/src/camera.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyankuan/CLionProjects/视觉有大符最新代码/src/camera.cpp > CMakeFiles/run.dir/src/camera.cpp.i
 
 CMakeFiles/run.dir/src/camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/camera.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyankuan/a_miaosuan_v7.42/src/camera.cpp -o CMakeFiles/run.dir/src/camera.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyankuan/CLionProjects/视觉有大符最新代码/src/camera.cpp -o CMakeFiles/run.dir/src/camera.cpp.s
 
 CMakeFiles/run.dir/src/energy_get.cpp.o: CMakeFiles/run.dir/flags.make
 CMakeFiles/run.dir/src/energy_get.cpp.o: ../src/energy_get.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyankuan/a_miaosuan_v7.42/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/run.dir/src/energy_get.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/src/energy_get.cpp.o -c /home/liyankuan/a_miaosuan_v7.42/src/energy_get.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyankuan/CLionProjects/视觉有大符最新代码/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/run.dir/src/energy_get.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/src/energy_get.cpp.o -c /home/liyankuan/CLionProjects/视觉有大符最新代码/src/energy_get.cpp
 
 CMakeFiles/run.dir/src/energy_get.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/energy_get.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyankuan/a_miaosuan_v7.42/src/energy_get.cpp > CMakeFiles/run.dir/src/energy_get.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyankuan/CLionProjects/视觉有大符最新代码/src/energy_get.cpp > CMakeFiles/run.dir/src/energy_get.cpp.i
 
 CMakeFiles/run.dir/src/energy_get.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/energy_get.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyankuan/a_miaosuan_v7.42/src/energy_get.cpp -o CMakeFiles/run.dir/src/energy_get.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyankuan/CLionProjects/视觉有大符最新代码/src/energy_get.cpp -o CMakeFiles/run.dir/src/energy_get.cpp.s
 
 CMakeFiles/run.dir/src/energy_predict.cpp.o: CMakeFiles/run.dir/flags.make
 CMakeFiles/run.dir/src/energy_predict.cpp.o: ../src/energy_predict.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyankuan/a_miaosuan_v7.42/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/run.dir/src/energy_predict.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/src/energy_predict.cpp.o -c /home/liyankuan/a_miaosuan_v7.42/src/energy_predict.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyankuan/CLionProjects/视觉有大符最新代码/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/run.dir/src/energy_predict.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/src/energy_predict.cpp.o -c /home/liyankuan/CLionProjects/视觉有大符最新代码/src/energy_predict.cpp
 
 CMakeFiles/run.dir/src/energy_predict.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/energy_predict.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyankuan/a_miaosuan_v7.42/src/energy_predict.cpp > CMakeFiles/run.dir/src/energy_predict.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyankuan/CLionProjects/视觉有大符最新代码/src/energy_predict.cpp > CMakeFiles/run.dir/src/energy_predict.cpp.i
 
 CMakeFiles/run.dir/src/energy_predict.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/energy_predict.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyankuan/a_miaosuan_v7.42/src/energy_predict.cpp -o CMakeFiles/run.dir/src/energy_predict.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyankuan/CLionProjects/视觉有大符最新代码/src/energy_predict.cpp -o CMakeFiles/run.dir/src/energy_predict.cpp.s
 
 CMakeFiles/run.dir/src/energy_state.cpp.o: CMakeFiles/run.dir/flags.make
 CMakeFiles/run.dir/src/energy_state.cpp.o: ../src/energy_state.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyankuan/a_miaosuan_v7.42/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/run.dir/src/energy_state.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/src/energy_state.cpp.o -c /home/liyankuan/a_miaosuan_v7.42/src/energy_state.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyankuan/CLionProjects/视觉有大符最新代码/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/run.dir/src/energy_state.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/src/energy_state.cpp.o -c /home/liyankuan/CLionProjects/视觉有大符最新代码/src/energy_state.cpp
 
 CMakeFiles/run.dir/src/energy_state.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/energy_state.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyankuan/a_miaosuan_v7.42/src/energy_state.cpp > CMakeFiles/run.dir/src/energy_state.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyankuan/CLionProjects/视觉有大符最新代码/src/energy_state.cpp > CMakeFiles/run.dir/src/energy_state.cpp.i
 
 CMakeFiles/run.dir/src/energy_state.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/energy_state.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyankuan/a_miaosuan_v7.42/src/energy_state.cpp -o CMakeFiles/run.dir/src/energy_state.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyankuan/CLionProjects/视觉有大符最新代码/src/energy_state.cpp -o CMakeFiles/run.dir/src/energy_state.cpp.s
 
 CMakeFiles/run.dir/src/serialport.cpp.o: CMakeFiles/run.dir/flags.make
 CMakeFiles/run.dir/src/serialport.cpp.o: ../src/serialport.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyankuan/a_miaosuan_v7.42/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/run.dir/src/serialport.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/src/serialport.cpp.o -c /home/liyankuan/a_miaosuan_v7.42/src/serialport.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyankuan/CLionProjects/视觉有大符最新代码/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/run.dir/src/serialport.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/run.dir/src/serialport.cpp.o -c /home/liyankuan/CLionProjects/视觉有大符最新代码/src/serialport.cpp
 
 CMakeFiles/run.dir/src/serialport.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/run.dir/src/serialport.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyankuan/a_miaosuan_v7.42/src/serialport.cpp > CMakeFiles/run.dir/src/serialport.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyankuan/CLionProjects/视觉有大符最新代码/src/serialport.cpp > CMakeFiles/run.dir/src/serialport.cpp.i
 
 CMakeFiles/run.dir/src/serialport.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/run.dir/src/serialport.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyankuan/a_miaosuan_v7.42/src/serialport.cpp -o CMakeFiles/run.dir/src/serialport.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyankuan/CLionProjects/视觉有大符最新代码/src/serialport.cpp -o CMakeFiles/run.dir/src/serialport.cpp.s
 
 # Object files for target run
 run_OBJECTS = \
@@ -238,7 +238,7 @@ run: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.4.7
 run: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.4.7
 run: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.4.7
 run: CMakeFiles/run.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/liyankuan/a_miaosuan_v7.42/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable run"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/liyankuan/CLionProjects/视觉有大符最新代码/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable run"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/run.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -251,6 +251,6 @@ CMakeFiles/run.dir/clean:
 .PHONY : CMakeFiles/run.dir/clean
 
 CMakeFiles/run.dir/depend:
-	cd /home/liyankuan/a_miaosuan_v7.42/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/liyankuan/a_miaosuan_v7.42 /home/liyankuan/a_miaosuan_v7.42 /home/liyankuan/a_miaosuan_v7.42/cmake-build-debug /home/liyankuan/a_miaosuan_v7.42/cmake-build-debug /home/liyankuan/a_miaosuan_v7.42/cmake-build-debug/CMakeFiles/run.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/liyankuan/CLionProjects/视觉有大符最新代码/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/liyankuan/CLionProjects/视觉有大符最新代码 /home/liyankuan/CLionProjects/视觉有大符最新代码 /home/liyankuan/CLionProjects/视觉有大符最新代码/cmake-build-debug /home/liyankuan/CLionProjects/视觉有大符最新代码/cmake-build-debug /home/liyankuan/CLionProjects/视觉有大符最新代码/cmake-build-debug/CMakeFiles/run.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run.dir/depend
 

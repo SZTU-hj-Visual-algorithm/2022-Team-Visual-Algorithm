@@ -73,7 +73,7 @@ void* Armor_Kal(void* PARAM)
 	RotatedRect mubiao;
 	Mat src_copy;
 	long int time_count = 0;
-	energy_pre E_predicter(shibie);
+	energy_pre E_predicter;
 
 	port.initSerialPort();
 	
@@ -102,10 +102,10 @@ void* Armor_Kal(void* PARAM)
  		lin[1] = 5.0;
 		lin[2] = 5.0;
 		lin[3] = 25.0;
-		
+		bool small_energy = false;
 		int lin_is_get;
 		lin_is_get = true;
-		//lin_is_get = port.get_Mode1(mode_temp, lin[0], lin[1], lin[2], lin[3]);
+		//lin_is_get = port.get_Mode1(mode_temp, lin[0], lin[1], lin[2], lin[3],shibie.enermy_color);
 		//printf("mode:%x\n",mode_temp);
 		if (mode_temp == 0x21)
 		{
@@ -138,9 +138,9 @@ void* Armor_Kal(void* PARAM)
 			//printf("quan_pitch:%f",quan_ab_pitch);
 			//printf("quan_yaw:%f",quan_ab_yaw);
 
-			if (E_predicter.energy_detect(src)) //
+			if (E_predicter.energy_detect(src, shibie.enermy_color)) //
 			{
-				E_predicter.energy_predict_aim(time_count);
+				E_predicter.energy_predict_aim(time_count,small_energy);
 				pthread_mutex_lock(&mutex_ka);
 				send_data.a[0] = E_predicter.E_pitch - quan_ab_pitch;
 				send_data.a[1] = E_predicter.E_yaw - quan_ab_yaw;
@@ -176,7 +176,39 @@ void* Armor_Kal(void* PARAM)
 		}
 		else if (mode_temp == 0x23)
 		{
+			small_energy = true;
 			printf("samll energy!!\n");
+			ka_src_get.copyTo(quan_src);
+			quan_ab_pitch = lin[0];
+			quan_ab_yaw = lin[1];
+			quan_ab_roll = lin[2];
+			quan_speed = lin[3];
+			send_data.is_get = lin_is_get;
+			time_count = getTickCount();
+			//printf("quan_pitch:%f",quan_ab_pitch);
+			//printf("quan_yaw:%f",quan_ab_yaw);
+			
+			if (E_predicter.energy_detect(src, shibie.enermy_color)) //
+			{
+				E_predicter.energy_predict_aim(time_count,small_energy);
+				pthread_mutex_lock(&mutex_ka);
+				send_data.a[0] = E_predicter.E_pitch - quan_ab_pitch;
+				send_data.a[1] = E_predicter.E_yaw - quan_ab_yaw;
+				send_data.mode = mode_temp;
+				send_data.da_is_get = 0x31;
+				
+				is_ka = true;
+				pthread_cond_signal(&cond_ka);
+				pthread_mutex_unlock(&mutex_ka);
+			}
+			else
+			{
+				pthread_mutex_lock(&mutex_ka);
+				send_data.da_is_get = 0x32;
+				is_ka = true;
+				pthread_cond_signal(&cond_ka);
+				pthread_mutex_unlock(&mutex_ka);
+			}
 		}
 		
 
@@ -266,7 +298,7 @@ void* Kal_predict(void* PARAM)
 					}
 				}
 			}
-			else if (mode == 0x22)
+			else if ((mode == 0x22)||(mode == 0x23))
 			{
 				
 				if(is_send == 0x31)

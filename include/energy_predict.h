@@ -77,7 +77,7 @@ public:
 	
 	
 	
-	double predict(double n_time, double dt, bool pre_not);//预测步
+	double predict(double n_time, double dt, bool pre_not, bool samll_energy);//预测步
 	
 	double correct(double measure);//更新步
 	
@@ -92,9 +92,9 @@ public:
 	
 	void reset();
 	
-	bool energy_detect(cv::Mat &src);//集合函数,给外部main函数调用用
+	bool energy_detect(cv::Mat &src, int color);//集合函数,给外部main函数调用用
 	
-	bool energy_predict_aim(long int time);
+	bool energy_predict_aim(long int time, bool small_energy);
 	
 	cv::Point gravity_finish(cv::Point &pp, Eigen::Vector3d &matrix, double depth);
 	

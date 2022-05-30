@@ -13,10 +13,11 @@ using namespace cv;
 using namespace std;
 
 
-bool energy_pre::energy_detect(Mat &src) {
+bool energy_pre::energy_detect(Mat &src, int color) {
 	
 	Rect r(210,200,840,824);
 	Mat img = src(r).clone();
+	this->enermy_color = color;
 	//std::cout<<"已击中："<<hited<<std::endl;
 	if (hited / 3 == 5) {
 
@@ -59,7 +60,7 @@ bool energy_pre::energy_detect(Mat &src) {
 }
 
 
-bool energy_pre::energy_predict_aim(long int now_time) {
+bool energy_pre::energy_predict_aim(long int now_time, bool small_energy) {
 	if (start_time == -1)
 	{
 		start_time = now_time;//大符开始计时的时刻
@@ -121,7 +122,7 @@ bool energy_pre::energy_predict_aim(long int now_time) {
 		cout << "转动方向：" << direct << endl;
 		Eigen::Vector3d ap,ap_c;
 		double predict_angle, depth;
-		predict(t, dt, true);//更新步前必要的更新参数用
+		predict(t, dt, true, small_energy);//更新步前必要的更新参数用
 		double cor = correct(angle);//更新步
 		//std::cout<<"更新角度："<<cor<<std::endl;
 		cv::Point pre_aim;
@@ -129,7 +130,7 @@ bool energy_pre::energy_predict_aim(long int now_time) {
 		ap_c = pnp_get_pc(p,w_std,h_std);
 		depth = ap_c(2, 0);
 		double p_t =sqrt(ap(0,0)*ap(0,0)+ap(1,0)*ap(1,0)+depth*depth) / SPEED;
-		predict_angle = predict(t , p_t + shoot_delay, false);
+		predict_angle = predict(t , p_t + shoot_delay, false,small_energy);
 //		cout<<predict_angle<<endl;
 		double pred_ang = predict_angle - cor;
 		//std::cout<<"预测角度："<<pred_ang<<std::endl;

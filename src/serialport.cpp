@@ -53,7 +53,7 @@ void SerialPort::reload(char const *portpath)
  *@brief   获取模式命令
  */
 
-bool SerialPort::get_Mode1(int &mode, float &pitch, float &yaw, float &roll, float &ball_speed/*, float &color*/)
+bool SerialPort::get_Mode1(int &mode, float &pitch, float &yaw, float &roll, float &ball_speed, int &color)
 {
     int bytes;
     char *name = ttyname(fd);
@@ -118,7 +118,7 @@ bool SerialPort::get_Mode1(int &mode, float &pitch, float &yaw, float &roll, flo
 		    demo.yaw_angle.c[3] = rdata[18+i];
 		    ball_speed = demo.yaw_angle.f;
 
-		    //color = rdata[19+i];
+		    color = (int)rdata[19+i];
 	
 	    
 	    
