@@ -189,7 +189,7 @@ bool KAL::predict(RotatedRect &detection, kal_filter& kf, double time)
 	
 	Eigen::Matrix<double, 6, 1> pre_xy = kf.predict(predict_time,true);
 	
-	shoot_delay = (fabs(pre_xy[1])/1.45)*shoot_delay_init;
+	shoot_delay = (fabs(pre_xy[1])/1.25)*shoot_delay_init;
 	//printf("shoot_delay:%lf\n",shoot_delay);
 	/*if ((-0.066<pre_xy[1] && pre_xy[1]< 0.066) && (-0.04<pre_xy[2] && pre_xy[2]< 0.04))
 	{

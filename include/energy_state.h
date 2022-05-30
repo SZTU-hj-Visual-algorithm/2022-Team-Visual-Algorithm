@@ -69,11 +69,11 @@ public:
 	double dt = 0;
 	
 	//大符装甲板宽高
-	double w_std = 0.230;//单位是米
-	double h_std = 0.127;
+	double w_std = 0.106;//单位是米
+	double h_std = 0.106;
 	//存储大符装甲板矩形的四个角点
 	cv::Point2f p[4];
-	
+	cv::Point2f pp[4];
 	//上一时刻角速度,在代码里有些地方是作为当前时刻的角度存在的
 	double l_angle = 0.0;
 	
@@ -96,7 +96,7 @@ public:
 	
 	static inline bool center_area(std::vector<cv::Point> contour1,std::vector<cv::Point> contour2)
 	{
-		return (cv::contourArea(contour1) > cv::contourArea(contour2));
+		return cv::contourArea(contour1) > cv::contourArea(contour2);
 	}
 	
 	//还需要一个清零预测参数的函数,这个函数在energy_predict里

@@ -170,7 +170,7 @@ void ArmorDetector::setImage(const cv::Mat & src){
 		//imshow("color", _max_color);
 		//_max_color = _max_color & thres_whole;  // _max_color获得了清晰的二值图
 		dilate(_max_color, _max_color, element);
-		imshow("max_color", _max_color);
+		//imshow("max_color", _max_color);
 	}
 	
 	////////////////////////////// end /////////////////////////////////////////

@@ -45,8 +45,8 @@ Point energy::detect_aim(Mat& img)
 {
 	Mat binary = cv::Mat(img.size(), CV_8UC1, cv::Scalar(0));
 //	Mat binary_2 = cv::Mat(img.size(), CV_8UC1, cv::Scalar(0));
-//	Mat thres_src;
-	Mat kernel2 = getStructuringElement(MORPH_CROSS,Size(17,15));
+	Mat thres_src;
+	Mat kernel2 = getStructuringElement(MORPH_CROSS,Size(15,15));
 	Mat kernel1 = getStructuringElement(MORPH_CROSS,Size(7,7));
 	
 	uchar* mat_head = (uchar*)img.data;
@@ -59,7 +59,7 @@ Point energy::detect_aim(Mat& img)
 	{
 		for (int i = 0; i < img_all; i++)
 		{
-			if (*(mat_head + 2) - *mat_head > 47)
+			if (*(mat_head + 2) - *mat_head > 45)
 				*bin_head = 255;
 			mat_head += 3;
 			bin_head++;
@@ -167,7 +167,7 @@ Point energy::detect_aim(Mat& img)
 			double wh_compare = w > h ? w / h : h / w;
 			if (wh_compare > wh_min_ratio && wh_compare < wh_max_ratio)
 			{
-				if (w*h>2100)
+				if (w*h>1800)
 				{
 					Mat mean, stdDev;
 					double avg,stddev;
@@ -209,6 +209,7 @@ Point energy::detect_aim(Mat& img)
 	}
 	
 	Point aim = final_rect.center;
+	RotatedRect center_r;
 	
 	if (find_c)
 	{
@@ -222,20 +223,22 @@ Point energy::detect_aim(Mat& img)
 		want_center.x = (c_x + c_x + c_w) / 2;
 		want_center.y = (c_y + c_y + c_h) / 2;
 		double want_dis = sqrt((want_center.x-aim.x)*(want_center.x-aim.x)+(want_center.y-aim.y)*(want_center.y-aim.y));
-		if ((want_dis < 200)&&(want_dis > 85))
+		if ((want_dis < 250)&&(want_dis > 85))
 		{
 			R_center.x = want_center.x;
 			R_center.y = want_center.y;
+			center_r = minAreaRect(centers[center_target]);
 			rectangle(img,center_rect,Scalar(255,0,0),5);
 		}
 		
 	}
 	radius = sqrt((R_center.x-aim.x)*(R_center.x-aim.x)+(R_center.y-aim.y)*(R_center.y-aim.y));
-	final_rect.points(p);
+	center_r.points(p);
+	final_rect.points(pp);
 	circle(img, aim, 6, Scalar(255, 0, 0), 5);
 	for (int i=0;i<4;i++)
 	{
-		line(img,p[i],p[(i+1)%4],Scalar(255,0,0),4);
+		line(img,pp[i],pp[(i+1)%4],Scalar(255,0,0),4);
 	}
 	imshow("image",img);
 	return aim;

@@ -96,9 +96,9 @@ public:
 	
 	bool energy_predict_aim(long int time);
 	
-	cv::Point gravity_finish(cv::Point &pp, Eigen::Vector3d &matrix);
+	cv::Point gravity_finish(cv::Point &pp, Eigen::Vector3d &matrix, double depth);
 	
-	Eigen::Vector3d pnp_get_pc(const cv::Point2f p[4]);
+	Eigen::Vector3d pnp_get_pc(const cv::Point2f p[4], double w, double h);
 	
 	inline Eigen::Vector3d pc_to_pu(Eigen::Vector3d& pc , double& depth)
 	{

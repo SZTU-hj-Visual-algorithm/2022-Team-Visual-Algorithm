@@ -20,6 +20,7 @@ void energy_pre::reset()//没打中大符，大符时间重置故所有参数都
 	last_time = 0;
 	t=0;
 	dt=0;
+	hited = 0;
 	flip_angle = false;
 	R_center.x = -1;
 	R_center.y=-1;
@@ -175,14 +176,14 @@ double energy_pre::keep_pi(double angle)
 	}
 }
 
-Eigen::Vector3d energy_pre::pnp_get_pc(const cv::Point2f p[4])
+Eigen::Vector3d energy_pre::pnp_get_pc(const cv::Point2f p[4], double w, double h)
 {
 	cv::Point2f lu, ld, ru, rd;
 	std::vector<cv::Point3d> ps = {
-			{-w_std / 2 , -h_std / 2, 0.},
-			{w_std / 2 , -h_std / 2, 0.},
-			{w_std / 2 , h_std / 2, 0.},
-			{-w_std / 2 , h_std / 2, 0.}
+			{-w / 2 , -h / 2, 0.},
+			{w / 2 , -h / 2, 0.},
+			{w / 2 , h / 2, 0.},
+			{-w / 2 , h / 2, 0.}
 	};
 	if (p[0].y < p[1].y) {
 		lu = p[0];   ////左上
@@ -220,16 +221,17 @@ Eigen::Vector3d energy_pre::pnp_get_pc(const cv::Point2f p[4])
 	return tv;
 }
 
-cv::Point energy_pre::gravity_finish(cv::Point& pp,Eigen::Vector3d &ap)
+cv::Point energy_pre::gravity_finish(cv::Point& pps,Eigen::Vector3d &ap, double depth)
 {
 	double height;
 	
 	//----------用到目标点而不是预测点是因为要获取目标的距离------------
-	double depth = ap(2,0);
+	//double depth = ap(2,0);
+	printf("depth:!!!%lf\n",depth);
 //	std::cout<<depth<<std::endl;
 	//------------------------------------------------------------------
 	
-	Eigen::Vector3d p_pre = {(double)pp.x,(double)pp.y,1.0};
+	Eigen::Vector3d p_pre = {(double)pps.x,(double)pps.y,1.0};
 	Eigen::Vector3d ap_pre = pu_to_pc(p_pre,depth);
 	
 	double del_ta = pow(SPEED, 4) + 2 * 9.8 * ap(1, 0) * SPEED * SPEED - 9.8 * 9.8 * depth*depth;
@@ -239,8 +241,8 @@ cv::Point energy_pre::gravity_finish(cv::Point& pp,Eigen::Vector3d &ap)
 	height = 0.5 * 9.8 * t_2;
 //	std::cout<<"抬枪补偿:"<<height<<std::endl;
 	Eigen::Vector3d ap_g = {ap_pre(0,0),ap_pre(1,0) - height,depth};
-	E_pitch = atan2(ap(1,0) - height, ap(2,0))/CV_PI*180.0;
-	E_yaw = atan2(ap(0,0) , ap(2,0))/CV_PI*180.0;
+	E_pitch = atan2(ap(1,0) - height, depth)/CV_PI*180.0;
+	E_yaw = atan2(ap(0,0) , depth)/CV_PI*180.0;
 	
 	Eigen::Vector3d ap_pu = pc_to_pu(ap_g,depth);//ap_g(2,0)是距离
 	

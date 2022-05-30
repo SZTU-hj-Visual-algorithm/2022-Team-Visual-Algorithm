@@ -33,7 +33,7 @@ private:
 	//cv::Point last_ct = {-1,-1};
 	float last_yaw=0;
 	
-	float shoot_delay_init = 0.2419;
+	float shoot_delay_init = 0.2609;
 	float shoot_delay = shoot_delay_init;
 	
 	double filter = 0.04;

@@ -15,7 +15,7 @@ using namespace std;
 
 bool energy_pre::energy_detect(Mat &src) {
 	
-	Rect r(215,200,850,824);
+	Rect r(210,200,840,824);
 	Mat img = src(r).clone();
 	//std::cout<<"已击中："<<hited<<std::endl;
 	if (hited / 3 == 5) {
@@ -69,7 +69,7 @@ bool energy_pre::energy_predict_aim(long int now_time) {
 	{
 		t = ((double)(now_time - start_time))/getTickFrequency();
 //		cout<<"总时间："<<t<<endl;
-		if (t>2.5)
+		if (t>2.408)
 		{
 			hit = false;
 			hited = 0;
@@ -118,24 +118,25 @@ bool energy_pre::energy_predict_aim(long int now_time) {
 	else {
 		angle = measured(Aim_armor);
 //		cout<<"观测值："<<angle<<endl;
-		//cout << "转动方向：" << direct << endl;
-		Eigen::Vector3d ap;
+		cout << "转动方向：" << direct << endl;
+		Eigen::Vector3d ap,ap_c;
 		double predict_angle, depth;
 		predict(t, dt, true);//更新步前必要的更新参数用
 		double cor = correct(angle);//更新步
 		//std::cout<<"更新角度："<<cor<<std::endl;
 		cv::Point pre_aim;
-		ap = pnp_get_pc(p);
-		depth = ap(2, 0);
-		double p_t =sqrt(ap(0,0)*ap(0,0)+ap(1,0)*ap(1,0)+ap(2,0)*ap(2,0)) / SPEED;
+		ap = pnp_get_pc(pp,0.230,0.127);
+		ap_c = pnp_get_pc(p,w_std,h_std);
+		depth = ap_c(2, 0);
+		double p_t =sqrt(ap(0,0)*ap(0,0)+ap(1,0)*ap(1,0)+depth*depth) / SPEED;
 		predict_angle = predict(t , p_t + shoot_delay, false);
 //		cout<<predict_angle<<endl;
 		double pred_ang = predict_angle - cor;
 		//std::cout<<"预测角度："<<pred_ang<<std::endl;
 		pre_aim = angle2_xy(Aim_armor,pred_ang);
 //		std::cout<<"predict_aim:"<<pre_aim<<std::endl;
-		cv::Point mubiao = gravity_finish(pre_aim, ap);
-		circle(image,pre_aim,8,Scalar(255,255,0),-1);
+		cv::Point mubiao = gravity_finish(pre_aim, ap, depth);
+		circle(image,mubiao,8,Scalar(255,255,0),-1);
 		imshow("image",image);
 		last_dt_p = Aim_armor;
 		return true;

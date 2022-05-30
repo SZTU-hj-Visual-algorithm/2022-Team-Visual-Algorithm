@@ -97,15 +97,15 @@ void* Armor_Kal(void* PARAM)
 
 		pthread_mutex_unlock(&mutex_new);
 		float lin[4];
-		int mode_temp/* = 0x22*/;
-		//lin[0] = 0.0;
- 		//lin[1] = 5.0;
-		//lin[2] = 5.0;
-		//lin[3] = 25.0;
+		int mode_temp = 0x22;
+		lin[0] = 0.0;
+ 		lin[1] = 5.0;
+		lin[2] = 5.0;
+		lin[3] = 25.0;
 		
 		int lin_is_get;
 		lin_is_get = true;
-		lin_is_get = port.get_Mode1(mode_temp, lin[0], lin[1], lin[2], lin[3]);
+		//lin_is_get = port.get_Mode1(mode_temp, lin[0], lin[1], lin[2], lin[3]);
 		//printf("mode:%x\n",mode_temp);
 		if (mode_temp == 0x21)
 		{
@@ -142,8 +142,8 @@ void* Armor_Kal(void* PARAM)
 			{
 				E_predicter.energy_predict_aim(time_count);
 				pthread_mutex_lock(&mutex_ka);
-				send_data.a[0] = E_predicter.E_yaw/*- send_data.a[0]*/;
-				send_data.a[1] = E_predicter.E_pitch/*- send_data.a[1]*/;
+				send_data.a[0] = E_predicter.E_pitch - quan_ab_pitch;
+				send_data.a[1] = E_predicter.E_yaw - quan_ab_yaw;
 				send_data.mode = mode_temp;
 				send_data.da_is_get = 0x31;
 				
@@ -173,6 +173,10 @@ void* Armor_Kal(void* PARAM)
 			//	port.TransformData(vdata);
 			//	port.send();
 			//}
+		}
+		else if (mode_temp == 0x23)
+		{
+			printf("samll energy!!\n");
 		}
 		
 
@@ -267,15 +271,16 @@ void* Kal_predict(void* PARAM)
 				
 				if(is_send == 0x31)
 				{
-					printf("dafu_yaw:%f\ndafu_pitch:%f\n", -ka.ab_pitch, -ka.ab_yaw);
-					vdata = { -ka.ab_yaw, -ka.ab_pitch, 0x31 };
+					printf("dafu_yaw:%f\ndafu_pitch:%f\n", -ka.ab_yaw, -ka.ab_pitch);
+					vdata = { -ka.ab_pitch, -ka.ab_yaw, 0x31 };
 					pan_wu = 0;
 				}				
 				else if (is_send == 0x32)
 				{
-					if (pan_wu <= 11)
+					if (pan_wu <= 13)
 					{
-						vdata = { -ka.ab_yaw, -ka.ab_pitch, 0x31 };
+						printf("dafu_yaw:%f\ndafu_pitch:%f\npan_wu:%d\n", -ka.ab_yaw, -ka.ab_pitch, pan_wu);
+						vdata = { -ka.ab_pitch, -ka.ab_yaw, 0x31 };
 						pan_wu++;
 					}
 					else

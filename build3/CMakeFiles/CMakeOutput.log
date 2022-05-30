@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/3.5.1/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/3.5.1/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/3.5.1/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/3.5.1/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp
+Change Dir: /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4c776/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4c776.dir/build.make CMakeFiles/cmTC_4c776.dir/build
-make[1]: Entering directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4c776.dir/testCCompiler.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_4c776.dir/testCCompiler.c.o   -c /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_4c776
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c776.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_4c776.dir/testCCompiler.c.o  -o cmTC_4c776 
-make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_01062/fast"
+/usr/bin/make -f CMakeFiles/cmTC_01062.dir/build.make CMakeFiles/cmTC_01062.dir/build
+make[1]: Entering directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_01062.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_01062.dir/testCCompiler.c.o   -c /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_01062
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01062.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_01062.dir/testCCompiler.c.o  -o cmTC_01062 
+make[1]: Leaving directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp
+Change Dir: /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_16889/fast"
-/usr/bin/make -f CMakeFiles/cmTC_16889.dir/build.make CMakeFiles/cmTC_16889.dir/build
-make[1]: Entering directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_16889.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_16889.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_16889
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16889.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTC_16889.dir/CMakeCCompilerABI.c.o  -o cmTC_16889  
+Run Build Command:"/usr/bin/make" "cmTC_1774b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1774b.dir/build.make CMakeFiles/cmTC_1774b.dir/build
+make[1]: Entering directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1774b.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_1774b.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_1774b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1774b.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_1774b.dir/CMakeCCompilerABI.c.o  -o cmTC_1774b  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -59,23 +59,23 @@ Thread model: posix
 gcc version 5.5.0 20171010 (Ubuntu 5.5.0-12ubuntu1~16.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_16889' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQWDlKF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_16889 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_16889.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1774b' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccevW1eF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_1774b /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_1774b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_16889/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_16889.dir/build.make CMakeFiles/cmTC_16889.dir/build]
-  ignore line: [make[1]: Entering directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_16889.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_16889.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_16889]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16889.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_16889.dir/CMakeCCompilerABI.c.o  -o cmTC_16889  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_1774b/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_1774b.dir/build.make CMakeFiles/cmTC_1774b.dir/build]
+  ignore line: [make[1]: Entering directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_1774b.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_1774b.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_1774b]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1774b.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_1774b.dir/CMakeCCompilerABI.c.o  -o cmTC_1774b  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -85,13 +85,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 5.5.0 20171010 (Ubuntu 5.5.0-12ubuntu1~16.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_16889' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQWDlKF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_16889 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_16889.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1774b' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccevW1eF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_1774b /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_1774b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccQWDlKF.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccevW1eF.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -108,7 +108,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_16889] ==> ignore
+    arg [cmTC_1774b] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -120,7 +120,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_16889.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_1774b.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -154,17 +154,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp
+Change Dir: /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8f8b4/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8f8b4.dir/build.make CMakeFiles/cmTC_8f8b4.dir/build
-make[1]: Entering directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8f8b4.dir/feature_tests.c.o
-/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_8f8b4.dir/feature_tests.c.o   -c /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/feature_tests.c
-Linking C executable cmTC_8f8b4
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f8b4.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_8f8b4.dir/feature_tests.c.o  -o cmTC_8f8b4 
-make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_fb4f9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fb4f9.dir/build.make CMakeFiles/cmTC_fb4f9.dir/build
+make[1]: Entering directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fb4f9.dir/feature_tests.c.o
+/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_fb4f9.dir/feature_tests.c.o   -c /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/feature_tests.c
+Linking C executable cmTC_fb4f9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb4f9.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_fb4f9.dir/feature_tests.c.o  -o cmTC_fb4f9 
+make[1]: Leaving directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -174,17 +174,17 @@ make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp
+Change Dir: /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c7bc0/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c7bc0.dir/build.make CMakeFiles/cmTC_c7bc0.dir/build
-make[1]: Entering directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c7bc0.dir/feature_tests.c.o
-/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_c7bc0.dir/feature_tests.c.o   -c /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/feature_tests.c
-Linking C executable cmTC_c7bc0
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7bc0.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_c7bc0.dir/feature_tests.c.o  -o cmTC_c7bc0 
-make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_cbd1e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cbd1e.dir/build.make CMakeFiles/cmTC_cbd1e.dir/build
+make[1]: Entering directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cbd1e.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_cbd1e.dir/feature_tests.c.o   -c /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/feature_tests.c
+Linking C executable cmTC_cbd1e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbd1e.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_cbd1e.dir/feature_tests.c.o  -o cmTC_cbd1e 
+make[1]: Leaving directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -194,17 +194,17 @@ make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp
+Change Dir: /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f1408/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f1408.dir/build.make CMakeFiles/cmTC_f1408.dir/build
-make[1]: Entering directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f1408.dir/feature_tests.c.o
-/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_f1408.dir/feature_tests.c.o   -c /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/feature_tests.c
-Linking C executable cmTC_f1408
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1408.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_f1408.dir/feature_tests.c.o  -o cmTC_f1408 
-make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_c1a8d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c1a8d.dir/build.make CMakeFiles/cmTC_c1a8d.dir/build
+make[1]: Entering directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c1a8d.dir/feature_tests.c.o
+/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_c1a8d.dir/feature_tests.c.o   -c /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/feature_tests.c
+Linking C executable cmTC_c1a8d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1a8d.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_c1a8d.dir/feature_tests.c.o  -o cmTC_c1a8d 
+make[1]: Leaving directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -212,30 +212,30 @@ make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp
+Change Dir: /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_293ce/fast"
-/usr/bin/make -f CMakeFiles/cmTC_293ce.dir/build.make CMakeFiles/cmTC_293ce.dir/build
-make[1]: Entering directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_293ce.dir/testCXXCompiler.cxx.o
-/usr/bin/c++      -o CMakeFiles/cmTC_293ce.dir/testCXXCompiler.cxx.o -c /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_293ce
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_293ce.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_293ce.dir/testCXXCompiler.cxx.o  -o cmTC_293ce 
-make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_d170e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d170e.dir/build.make CMakeFiles/cmTC_d170e.dir/build
+make[1]: Entering directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d170e.dir/testCXXCompiler.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_d170e.dir/testCXXCompiler.cxx.o -c /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_d170e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d170e.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_d170e.dir/testCXXCompiler.cxx.o  -o cmTC_d170e 
+make[1]: Leaving directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp
+Change Dir: /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a57d1/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a57d1.dir/build.make CMakeFiles/cmTC_a57d1.dir/build
-make[1]: Entering directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_a57d1.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++      -o CMakeFiles/cmTC_a57d1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_a57d1
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a57d1.dir/link.txt --verbose=1
-/usr/bin/c++       -v CMakeFiles/cmTC_a57d1.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_a57d1  
+Run Build Command:"/usr/bin/make" "cmTC_3dc21/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3dc21.dir/build.make CMakeFiles/cmTC_3dc21.dir/build
+make[1]: Entering directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3dc21.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++      -o CMakeFiles/cmTC_3dc21.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_3dc21
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3dc21.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTC_3dc21.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3dc21  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -245,23 +245,23 @@ Thread model: posix
 gcc version 5.5.0 20171010 (Ubuntu 5.5.0-12ubuntu1~16.04) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a57d1' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwxXX02.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_a57d1 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_a57d1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3dc21' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMcUzw4.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_3dc21 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_3dc21.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_a57d1/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_a57d1.dir/build.make CMakeFiles/cmTC_a57d1.dir/build]
-  ignore line: [make[1]: Entering directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_a57d1.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_a57d1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_a57d1]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a57d1.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_a57d1.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_a57d1  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_3dc21/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_3dc21.dir/build.make CMakeFiles/cmTC_3dc21.dir/build]
+  ignore line: [make[1]: Entering directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_3dc21.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_3dc21.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_3dc21]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3dc21.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_3dc21.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3dc21  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -271,13 +271,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 5.5.0 20171010 (Ubuntu 5.5.0-12ubuntu1~16.04) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_a57d1' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwxXX02.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_a57d1 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_a57d1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3dc21' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMcUzw4.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_3dc21 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_3dc21.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccwxXX02.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccMcUzw4.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -294,7 +294,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_a57d1] ==> ignore
+    arg [cmTC_3dc21] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -306,7 +306,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_a57d1.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_3dc21.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -336,17 +336,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp
+Change Dir: /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d4946/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d4946.dir/build.make CMakeFiles/cmTC_d4946.dir/build
-make[1]: Entering directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d4946.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_d4946.dir/feature_tests.cxx.o -c /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_d4946
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4946.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_d4946.dir/feature_tests.cxx.o  -o cmTC_d4946 
-make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_10019/fast"
+/usr/bin/make -f CMakeFiles/cmTC_10019.dir/build.make CMakeFiles/cmTC_10019.dir/build
+make[1]: Entering directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_10019.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_10019.dir/feature_tests.cxx.o -c /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_10019
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10019.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_10019.dir/feature_tests.cxx.o  -o cmTC_10019 
+make[1]: Leaving directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -409,17 +409,17 @@ make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp
+Change Dir: /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b079a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b079a.dir/build.make CMakeFiles/cmTC_b079a.dir/build
-make[1]: Entering directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_b079a.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_b079a.dir/feature_tests.cxx.o -c /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_b079a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b079a.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_b079a.dir/feature_tests.cxx.o  -o cmTC_b079a 
-make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_6fee7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6fee7.dir/build.make CMakeFiles/cmTC_6fee7.dir/build
+make[1]: Entering directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6fee7.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_6fee7.dir/feature_tests.cxx.o -c /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_6fee7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fee7.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_6fee7.dir/feature_tests.cxx.o  -o cmTC_6fee7 
+make[1]: Leaving directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -482,17 +482,17 @@ make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp
+Change Dir: /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5715b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5715b.dir/build.make CMakeFiles/cmTC_5715b.dir/build
-make[1]: Entering directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_5715b.dir/feature_tests.cxx.o
-/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_5715b.dir/feature_tests.cxx.o -c /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_5715b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5715b.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_5715b.dir/feature_tests.cxx.o  -o cmTC_5715b 
-make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_dbb3e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dbb3e.dir/build.make CMakeFiles/cmTC_dbb3e.dir/build
+make[1]: Entering directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_dbb3e.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_dbb3e.dir/feature_tests.cxx.o -c /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_dbb3e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbb3e.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_dbb3e.dir/feature_tests.cxx.o  -o cmTC_dbb3e 
+make[1]: Leaving directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -553,86 +553,86 @@ make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
 Determining if the function XOpenDisplay exists in the /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so passed with the following output:
-Change Dir: /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp
+Change Dir: /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1c1a8/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1c1a8.dir/build.make CMakeFiles/cmTC_1c1a8.dir/build
-make[1]: Entering directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1c1a8.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTC_1c1a8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_1c1a8
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c1a8.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTC_1c1a8.dir/CheckFunctionExists.c.o  -o cmTC_1c1a8 /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
-make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_cce07/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cce07.dir/build.make CMakeFiles/cmTC_cce07.dir/build
+make[1]: Entering directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cce07.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTC_cce07.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cce07
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cce07.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTC_cce07.dir/CheckFunctionExists.c.o  -o cmTC_cce07 /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+make[1]: Leaving directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
 
 
 Determining if the function gethostbyname exists passed with the following output:
-Change Dir: /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp
+Change Dir: /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9f24a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9f24a.dir/build.make CMakeFiles/cmTC_9f24a.dir/build
-make[1]: Entering directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_9f24a.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_9f24a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_9f24a
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f24a.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTC_9f24a.dir/CheckFunctionExists.c.o  -o cmTC_9f24a 
-make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_5e2c5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5e2c5.dir/build.make CMakeFiles/cmTC_5e2c5.dir/build
+make[1]: Entering directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5e2c5.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_5e2c5.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5e2c5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e2c5.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTC_5e2c5.dir/CheckFunctionExists.c.o  -o cmTC_5e2c5 
+make[1]: Leaving directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
 
 
 Determining if the function connect exists passed with the following output:
-Change Dir: /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp
+Change Dir: /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_14f12/fast"
-/usr/bin/make -f CMakeFiles/cmTC_14f12.dir/build.make CMakeFiles/cmTC_14f12.dir/build
-make[1]: Entering directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_14f12.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTC_14f12.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_14f12
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14f12.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTC_14f12.dir/CheckFunctionExists.c.o  -o cmTC_14f12 
-make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_cfde9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cfde9.dir/build.make CMakeFiles/cmTC_cfde9.dir/build
+make[1]: Entering directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cfde9.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTC_cfde9.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cfde9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cfde9.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTC_cfde9.dir/CheckFunctionExists.c.o  -o cmTC_cfde9 
+make[1]: Leaving directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
 
 
 Determining if the function remove exists passed with the following output:
-Change Dir: /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp
+Change Dir: /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c04c6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c04c6.dir/build.make CMakeFiles/cmTC_c04c6.dir/build
-make[1]: Entering directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c04c6.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTC_c04c6.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_c04c6
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c04c6.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTC_c04c6.dir/CheckFunctionExists.c.o  -o cmTC_c04c6 
-make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_d212d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d212d.dir/build.make CMakeFiles/cmTC_d212d.dir/build
+make[1]: Entering directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d212d.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTC_d212d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d212d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d212d.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTC_d212d.dir/CheckFunctionExists.c.o  -o cmTC_d212d 
+make[1]: Leaving directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
 
 
 Determining if the function shmat exists passed with the following output:
-Change Dir: /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp
+Change Dir: /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1e44c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1e44c.dir/build.make CMakeFiles/cmTC_1e44c.dir/build
-make[1]: Entering directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1e44c.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTC_1e44c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_1e44c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e44c.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTC_1e44c.dir/CheckFunctionExists.c.o  -o cmTC_1e44c 
-make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_c7968/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c7968.dir/build.make CMakeFiles/cmTC_c7968.dir/build
+make[1]: Entering directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c7968.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTC_c7968.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c7968
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c7968.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTC_c7968.dir/CheckFunctionExists.c.o  -o cmTC_c7968 
+make[1]: Leaving directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
 
 
 Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
-Change Dir: /home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp
+Change Dir: /home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_33dd3/fast"
-/usr/bin/make -f CMakeFiles/cmTC_33dd3.dir/build.make CMakeFiles/cmTC_33dd3.dir/build
-make[1]: Entering directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_33dd3.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTC_33dd3.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_33dd3
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_33dd3.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTC_33dd3.dir/CheckFunctionExists.c.o  -o cmTC_33dd3 -lICE 
-make[1]: Leaving directory '/home/dji/Desktop/a_miaosuan_v7.5/build3/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_a154f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a154f.dir/build.make CMakeFiles/cmTC_a154f.dir/build
+make[1]: Entering directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a154f.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTC_a154f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a154f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a154f.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTC_a154f.dir/CheckFunctionExists.c.o  -o cmTC_a154f -lICE 
+make[1]: Leaving directory '/home/dji/Desktop/视觉有大符最新代码/build3/CMakeFiles/CMakeTmp'
 
 

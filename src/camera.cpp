@@ -44,12 +44,12 @@ bool Camera::init()
 	CameraSetAeState(h_camera, false);
 	
 	//降低曝光时间，一般为了防止图像拖影将曝光时间调为2毫秒以下，该函数以微秒为单位
-	CameraSetExposureTime(h_camera, 1150.0);
+	CameraSetExposureTime(h_camera, 1550.0);
 	//CameraSetExposureTime(h_camera, 15000.0);
 	
 	//调高图像模拟增益值，使
 	//模拟增益值最大为192
-	CameraSetAnalogGain(h_camera, 191);
+	CameraSetAnalogGain(h_camera, 192);
 	
 	//CameraSetFrameSpeed(h_camera, 3);
 	
