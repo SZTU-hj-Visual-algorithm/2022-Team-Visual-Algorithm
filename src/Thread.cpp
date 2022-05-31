@@ -21,7 +21,7 @@ form send_data;
 
 Mat ka_src_get;
 
-SerialPort port("/dev/ttyS0");
+SerialPort port("/dev/ttyUSB0");
 
 void* Build_Src(void* PARAM)
 {
@@ -97,15 +97,15 @@ void* Armor_Kal(void* PARAM)
 
 		pthread_mutex_unlock(&mutex_new);
 		float lin[4];
-		int mode_temp = 0x22;
-		lin[0] = 0.0;
- 		lin[1] = 5.0;
-		lin[2] = 5.0;
-		lin[3] = 25.0;
+		int mode_temp/* = 0x22*/;
+		//lin[0] = 0.0;
+ 		//lin[1] = 5.0;
+		//lin[2] = 5.0;
+		//lin[3] = 25.0;
 		bool small_energy = false;
 		int lin_is_get;
 		lin_is_get = true;
-		//lin_is_get = port.get_Mode1(mode_temp, lin[0], lin[1], lin[2], lin[3],shibie.enermy_color);
+		lin_is_get = port.get_Mode1(mode_temp, lin[0], lin[1], lin[2], lin[3],shibie.enermy_color);
 		//printf("mode:%x\n",mode_temp);
 		if (mode_temp == 0x21)
 		{
@@ -118,7 +118,7 @@ void* Armor_Kal(void* PARAM)
 			send_data.a[1] = lin[1];
 			send_data.a[2] = lin[2];
 			send_data.a[3] = lin[3];
-			src_copy.copyTo(ka_src_get); //1
+			src_copy.copyTo(ka_src_get); 
 			send_data.mode = mode_temp;
 			send_data.is_get = lin_is_get;
 			is_ka = true;
@@ -138,7 +138,7 @@ void* Armor_Kal(void* PARAM)
 			//printf("quan_pitch:%f",quan_ab_pitch);
 			//printf("quan_yaw:%f",quan_ab_yaw);
 
-			if (E_predicter.energy_detect(src, shibie.enermy_color)) //
+			if (E_predicter.energy_detect(src, shibie.enermy_color)) 
 			{
 				E_predicter.energy_predict_aim(time_count,small_energy);
 				pthread_mutex_lock(&mutex_ka);
@@ -190,16 +190,27 @@ void* Armor_Kal(void* PARAM)
 			
 			if (E_predicter.energy_detect(src, shibie.enermy_color)) //
 			{
-				E_predicter.energy_predict_aim(time_count,small_energy);
-				pthread_mutex_lock(&mutex_ka);
-				send_data.a[0] = E_predicter.E_pitch - quan_ab_pitch;
-				send_data.a[1] = E_predicter.E_yaw - quan_ab_yaw;
-				send_data.mode = mode_temp;
-				send_data.da_is_get = 0x31;
+				if (E_predicter.energy_predict_aim(time_count,small_energy))
+				{
+					pthread_mutex_lock(&mutex_ka);
+					send_data.a[0] = E_predicter.E_pitch - quan_ab_pitch;
+					send_data.a[1] = E_predicter.E_yaw - quan_ab_yaw;
+					send_data.mode = mode_temp;
+					send_data.da_is_get = 0x31;
 				
-				is_ka = true;
-				pthread_cond_signal(&cond_ka);
-				pthread_mutex_unlock(&mutex_ka);
+					is_ka = true;
+					pthread_cond_signal(&cond_ka);
+					pthread_mutex_unlock(&mutex_ka);
+				}
+				else
+				{
+					pthread_mutex_lock(&mutex_ka);
+					send_data.da_is_get = 0x32;
+					is_ka = true;
+					pthread_cond_signal(&cond_ka);
+					pthread_mutex_unlock(&mutex_ka);
+				}
+				
 			}
 			else
 			{

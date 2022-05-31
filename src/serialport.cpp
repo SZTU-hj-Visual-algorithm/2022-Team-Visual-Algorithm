@@ -123,10 +123,10 @@ bool SerialPort::get_Mode1(int &mode, float &pitch, float &yaw, float &roll, flo
 	    
 	    
 		    tcflush(fd, TCIFLUSH);
-		    printf("11pitch:%f\n",pitch);
-		    printf("11yao:%f\n",yaw);
-		    printf("liroll:%f\n",roll);
-		    printf("lispeed:%f\n",ball_speed);
+		    //printf("11pitch:%f\n",pitch);
+		    //printf("11yao:%f\n",yaw);
+		    //printf("liroll:%f\n",roll);
+		    //printf("lispeed:%f\n",ball_speed);
 		    return true;
 		}else
 		{

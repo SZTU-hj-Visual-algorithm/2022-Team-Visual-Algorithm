@@ -1,4 +1,4 @@
-# Install script for directory: /home/dji/Desktop/a_miaosuanv8.1
+# Install script for directory: /home/dji/Desktop/a_miaosuanv8.2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dji/Desktop/a_miaosuanv8.1/build3/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dji/Desktop/a_miaosuanv8.2/build3/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

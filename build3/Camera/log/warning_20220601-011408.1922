@@ -1,0 +1,7 @@
+Log file created at: 2022/06/01 01:14:08
+Running on machine: dji-MANIFOLD-2-C
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0601 01:14:08.547152  1928 MVCameraBase.cpp:98] Device:(name:MV-SUA133GC#0 sn:041081820603)Lost
+W0601 01:14:15.593186  1928 MVCameraBase.cpp:118] Device:(name:MV-SUA133GC#0 sn:041081820603)ReConnected, TolCount:1
+W0601 01:18:55.452293  1928 MVCameraBase.cpp:98] Device:(name:MV-SUA133GC#0 sn:041081820603)Lost
+W0601 01:19:02.484226  1928 MVCameraBase.cpp:118] Device:(name:MV-SUA133GC#0 sn:041081820603)ReConnected, TolCount:2

@@ -46,8 +46,8 @@ Point energy::detect_aim(Mat& img)
 	Mat binary = cv::Mat(img.size(), CV_8UC1, cv::Scalar(0));
 //	Mat binary_2 = cv::Mat(img.size(), CV_8UC1, cv::Scalar(0));
 	Mat thres_src;
-	Mat kernel2 = getStructuringElement(MORPH_CROSS,Size(15,15));
-	Mat kernel1 = getStructuringElement(MORPH_CROSS,Size(7,7));
+	Mat kernel2 = getStructuringElement(MORPH_CROSS,Size(13,13));
+	Mat kernel1 = getStructuringElement(MORPH_CROSS,Size(9,9));
 	
 	uchar* mat_head = (uchar*)img.data;
 	uchar* bin_head = (uchar*)binary.data;
@@ -136,7 +136,7 @@ Point energy::detect_aim(Mat& img)
 
 //					if (dis_dela < 50)
 //					{
-						centers.push_back(cnts[i]);
+					centers.push_back(cnts[i]);
 					find_c = true;
 //					}
 				}
@@ -148,6 +148,7 @@ Point energy::detect_aim(Mat& img)
 	if (hit_c/3 - hited/3 == 1) {
 		hit = true;
 		hited = hit_c;
+		//printf("yidazhong_energy                                                       :%d\n",hited);
 	}
 	std::sort(centers.begin(),centers.end(),center_area);
 	
@@ -165,29 +166,37 @@ Point energy::detect_aim(Mat& img)
 			double w = ro_rect.size.width;
 			double h = ro_rect.size.height;
 			double wh_compare = w > h ? w / h : h / w;
-			if (wh_compare > wh_min_ratio && wh_compare < wh_max_ratio)
+			if ((wh_compare > wh_min_ratio) && (wh_compare < wh_max_ratio))
 			{
-				if (w*h>1800)
+				double rect_area = w*h;
+				if ((rect_area/contourArea(cntses[i]) > 0.78) && (rect_area/contourArea(cntses[i]) < 1.23))
 				{
-					Mat mean, stdDev;
-					double avg,stddev;
-					meanStdDev(img(cnt_r),mean,stdDev);
-					avg = mean.ptr<double>(0)[0];
-					stddev = stdDev.ptr<double>(0)[0];
-					if ((avg < 52.00)&&(stddev > 25.8))
+					//printf("mianji                                          :%lf\n",contourArea(cntses[i]));
+					if ((contourArea(cntses[i]) > 900)&&(contourArea(cntses[i])<1500))
 					{
-						if (symbol == 1)
+						Mat mean, stdDev;
+						double avg,stddev;
+						meanStdDev(img(cnt_r),mean,stdDev);
+						avg = mean.ptr<double>(0)[0];
+						stddev = stdDev.ptr<double>(0)[0];
+						//printf("avg                                          :%lf\n",avg);
+						//printf("stddev                                          :%lf\n",stddev);
+						if ((avg < 43.00)&&(stddev > 15.8))
 						{
-							aims.push_back(cntses[i]);
+							if (symbol == 1)
+							{
+								aims.push_back(cntses[i]);
+							}
+							else
+							{
+								aims.push_back(cntses[i]);
+								symbol= 1;
+							}
 						}
-						else
-						{
-							aims.push_back(cntses[i]);
-							symbol= 1;
-						}
-					}
 					
+					}
 				}
+				
 			}
 		}
 		if (symbol == 1)
@@ -223,7 +232,7 @@ Point energy::detect_aim(Mat& img)
 		want_center.x = (c_x + c_x + c_w) / 2;
 		want_center.y = (c_y + c_y + c_h) / 2;
 		double want_dis = sqrt((want_center.x-aim.x)*(want_center.x-aim.x)+(want_center.y-aim.y)*(want_center.y-aim.y));
-		if ((want_dis < 250)&&(want_dis > 85))
+		if ((want_dis < 270)&&(want_dis > 85))
 		{
 			R_center.x = want_center.x;
 			R_center.y = want_center.y;

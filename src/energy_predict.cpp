@@ -76,8 +76,8 @@ energy_pre::energy_pre()
 	R = 0.2;
 	sigma = Q;
 	
-	F_MAT=(cv::Mat_<double>(3, 3) << 1583.14676, 0.000000000000, 633.90210, 0.000000000000, 1582.31678, 528.53893, 0.000000000000, 0.000000000000, 1.000000000000);
-	C_MAT=(cv::Mat_<double>(1, 5) << -0.08767, 0.19792, 0.00021, 0.00068, 0.00000);
+	F_MAT=(cv::Mat_<double>(3, 3) << 1554.52600, 0.000000000000, 630.01725, 0.000000000000, 1554.47451, 519.78242, 0.000000000000, 0.000000000000, 1.000000000000);
+	C_MAT=(cv::Mat_<double>(1, 5) << -0.08424, 0.16737, -0.00006, 0.00014, 0.00000);
 	
 	cv::cv2eigen(F_MAT,F_EGN);
 	cv::cv2eigen(C_MAT,C_EGN);
@@ -92,8 +92,8 @@ energy_pre::energy_pre(ArmorDetector &armor)
 	R = 0.2;
 	sigma = Q;
 
-	F_MAT=(cv::Mat_<double>(3, 3) << 1583.14676, 0.000000000000, 633.90210, 0.000000000000, 1582.31678, 528.53893, 0.000000000000, 0.000000000000, 1.000000000000);
-	C_MAT=(cv::Mat_<double>(1, 5) << -0.08767, 0.19792, 0.00021, 0.00068, 0.00000);
+	F_MAT=(cv::Mat_<double>(3, 3) << 1554.52600, 0.000000000000, 630.01725, 0.000000000000, 1554.47451, 519.78242, 0.000000000000, 0.000000000000, 1.000000000000);
+	C_MAT=(cv::Mat_<double>(1, 5) << -0.08424, 0.16737, -0.00006, 0.00014, 0.00000);
 
 	cv::cv2eigen(F_MAT,F_EGN);
 	cv::cv2eigen(C_MAT,C_EGN);
@@ -252,22 +252,23 @@ cv::Point energy_pre::gravity_finish(cv::Point& pps,Eigen::Vector3d &ap, double 
 //	std::cout<<depth<<std::endl;
 	//------------------------------------------------------------------
 	
-	Eigen::Vector3d p_pre = {(double)pps.x,(double)pps.y,1.0};
+	cv::Point r_pps(pps.x+210,pps.y+200);
+	Eigen::Vector3d p_pre = {(double)r_pps.x,(double)r_pps.y,1.0};
 	Eigen::Vector3d ap_pre = pu_to_pc(p_pre,depth);
 	
-	double del_ta = pow(SPEED, 4) + 2 * 9.8 * ap(1, 0) * SPEED * SPEED - 9.8 * 9.8 * depth*depth;
+	double del_ta = pow(SPEED, 4) + 2 * 9.8 * ap_pre(1, 0) * SPEED * SPEED - 9.8 * 9.8 * depth*depth;
 	
-	double t_2 = (9.8 * ap(1, 0) + SPEED * SPEED - sqrt(del_ta)) / (0.5 * 9.8 * 9.8);
+	double t_2 = (9.8 * ap_pre(1, 0) + SPEED * SPEED - sqrt(del_ta)) / (0.5 * 9.8 * 9.8);
 	
 	height = 0.5 * 9.8 * t_2;
 //	std::cout<<"抬枪补偿:"<<height<<std::endl;
 	Eigen::Vector3d ap_g = {ap_pre(0,0),ap_pre(1,0) - height,depth};
-	E_pitch = atan2(ap(1,0) - height, depth)/CV_PI*180.0;
-	E_yaw = atan2(ap(0,0) , depth)/CV_PI*180.0;
+	E_pitch = atan2(ap_pre(1,0) + 0.055 - height*1.055, depth)/CV_PI*180.0;
+	E_yaw = atan2(ap_pre(0,0) , depth)/CV_PI*180.0 - 0.24;
 	
 	Eigen::Vector3d ap_pu = pc_to_pu(ap_g,depth);//ap_g(2,0)是距离
 	
-	return cv::Point((int)ap_pu(0,0),(int)ap_pu(1,0));
+	return cv::Point((int)ap_pu(0,0)-210,(int)ap_pu(1,0)-200);
 }
 
 double energy_pre::measured(cv::Point& xy) //重写

@@ -19,10 +19,10 @@ bool energy_pre::energy_detect(Mat &src, int color) {
 	Mat img = src(r).clone();
 	this->enermy_color = color;
 	//std::cout<<"已击中："<<hited<<std::endl;
-	if (hited / 3 == 5) {
+	//if (hited / 3 == 5) {
 
-		return false;
-	}
+	//	return false;
+	//}
 //	cout<<img.size<<endl;
 //	image = set_image(img);
 
@@ -109,7 +109,18 @@ bool energy_pre::energy_predict_aim(long int now_time, bool small_energy) {
 		count++;
 	}
 	
-	double angle;
+	double angle, depth;
+	Eigen::Vector3d ap,ap_c;
+	ap = pnp_get_pc(pp,0.230,0.127);
+	ap_c = pnp_get_pc(p,w_std,h_std);
+	if (ap_c(2,0) > 10.5)
+	{
+		depth = ap_c(2, 0)*0.007 + depth;
+	}
+	else
+	{
+		depth = ap_c(2,0);
+	}
 	
 	//上一时刻的点设置好
 	if (last_dt_p.x == -1 && last_dt_p.y == -1) {
@@ -117,30 +128,35 @@ bool energy_pre::energy_predict_aim(long int now_time, bool small_energy) {
 		return false;
 	}
 	else {
-		angle = measured(Aim_armor);
-//		cout<<"观测值："<<angle<<endl;
-		cout << "转动方向：" << direct << endl;
-		Eigen::Vector3d ap,ap_c;
-		double predict_angle, depth;
-		predict(t, dt, true, small_energy);//更新步前必要的更新参数用
-		double cor = correct(angle);//更新步
-		//std::cout<<"更新角度："<<cor<<std::endl;
-		cv::Point pre_aim;
-		ap = pnp_get_pc(pp,0.230,0.127);
-		ap_c = pnp_get_pc(p,w_std,h_std);
-		depth = ap_c(2, 0);
-		double p_t =sqrt(ap(0,0)*ap(0,0)+ap(1,0)*ap(1,0)+depth*depth) / SPEED;
-		predict_angle = predict(t , p_t + shoot_delay, false,small_energy);
-//		cout<<predict_angle<<endl;
-		double pred_ang = predict_angle - cor;
-		//std::cout<<"预测角度："<<pred_ang<<std::endl;
-		pre_aim = angle2_xy(Aim_armor,pred_ang);
-//		std::cout<<"predict_aim:"<<pre_aim<<std::endl;
-		cv::Point mubiao = gravity_finish(pre_aim, ap, depth);
-		circle(image,mubiao,8,Scalar(255,255,0),-1);
-		imshow("image",image);
-		last_dt_p = Aim_armor;
-		return true;
+		if ((R_center.x!=0)&&(R_center.y!=0)&&(depth>5)&&(depth<14))
+		{
+			angle = measured(Aim_armor);
+//			cout<<"观测值："<<angle<<endl;
+			cout << "转动方向：" << direct << endl;
+		
+			double predict_angle;
+			predict(t, dt, true, small_energy);//更新步前必要的更新参数用
+			double cor = correct(angle);//更新步
+			//std::cout<<"更新角度："<<cor<<std::endl;
+			cv::Point pre_aim;
+
+			double p_t =sqrt(ap(0,0)*ap(0,0)+ap(1,0)*ap(1,0)+depth*depth) / SPEED;
+			predict_angle = predict(t , p_t + shoot_delay, false,small_energy);
+//			cout<<predict_angle<<endl;
+			double pred_ang = predict_angle - cor;
+			//std::cout<<"预测角度："<<pred_ang<<std::endl;
+			pre_aim = angle2_xy(Aim_armor,pred_ang);
+//			std::cout<<"predict_aim:"<<pre_aim<<std::endl;
+			cv::Point mubiao = gravity_finish(pre_aim, ap, depth);
+			circle(image,mubiao,8,Scalar(255,255,0),-1);
+			imshow("image",image);
+			last_dt_p = Aim_armor;
+			return true;
+		}	
+		else
+		{
+			return false;
+		}
 	}
 }
 

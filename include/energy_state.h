@@ -32,8 +32,8 @@ class energy:public robot_state
 {
 private:
 	
-	double wh_min_ratio = 1.25;
-	double wh_max_ratio = 1.85;
+	double wh_min_ratio = 1.15;
+	double wh_max_ratio = 2.65;
 
 
 public:
