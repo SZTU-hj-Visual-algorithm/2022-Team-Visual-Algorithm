@@ -218,6 +218,14 @@ Point energy::detect_aim(Mat& img)
 	}
 	
 	Point aim = final_rect.center;
+	if (final_rect.size.height > final_rect.size.width)
+	{
+	    pnp_flip_wh = true;
+	}
+	else
+	{
+	    pnp_flip_wh = false;
+	}
 	RotatedRect center_r;
 	
 	if (find_c)

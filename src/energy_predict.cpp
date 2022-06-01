@@ -200,6 +200,12 @@ double energy_pre::keep_pi(double angle)
 Eigen::Vector3d energy_pre::pnp_get_pc(const cv::Point2f p[4], double w, double h)
 {
 	cv::Point2f lu, ld, ru, rd;
+	if (pnp_flip_wh)
+	{
+	    double w_temp = w;
+	    w = h;
+	    h = w_temp;
+	}
 	std::vector<cv::Point3d> ps = {
 			{-w / 2 , -h / 2, 0.},
 			{w / 2 , -h / 2, 0.},

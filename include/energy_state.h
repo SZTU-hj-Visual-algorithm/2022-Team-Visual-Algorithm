@@ -76,6 +76,7 @@ public:
 	cv::Point2f pp[4];
 	//上一时刻角速度,在代码里有些地方是作为当前时刻的角度存在的
 	double l_angle = 0.0;
+	bool pnp_flip_wh = false;
 	
 	//上一时刻的角度,在代码里有些地方是作为当前时刻的角度存在的
 	double last_angle = 0.0;
