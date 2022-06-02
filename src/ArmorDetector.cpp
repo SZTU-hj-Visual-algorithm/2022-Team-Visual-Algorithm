@@ -56,6 +56,10 @@ void ArmorDetector::setImage(const cv::Mat & src){
 		
 		int w = int(rect.width * scale_w);
 		int h = int(rect.height * scale_h);
+		if (w < 100)
+			w = 300;  //调
+		if (h < 100)
+			h = 300; //调
 		Point center = last_result;
 		int x = std::max(center.x - w, 0);      ////这里为什么w不是取一半
 		int y = std::max(center.y - h, 0);
@@ -94,14 +98,14 @@ void ArmorDetector::setImage(const cv::Mat & src){
 	
 	
 	int thres_max_color_red = 46;
-	int thres_max_color_blue = 146;
+	int thres_max_color_blue = 46;
 	
 	_max_color = cv::Mat(_src.size(), CV_8UC1, cv::Scalar(0));
 	
 	
 	Mat element = getStructuringElement(MORPH_CROSS, Size(3, 3));
 	// 敌方颜色为红色时
-	if (enermy_color == RED){
+	if (enemy_color == RED){
 		//cout<<"in"<<endl;
 		//Mat thres_whole;
 		
@@ -137,7 +141,7 @@ void ArmorDetector::setImage(const cv::Mat & src){
 		
 		//_max_color = _max_color & thres_whole;  // _max_color获得了清晰的二值图
 		dilate(_max_color, _max_color, element);
-		imshow("max_color", _max_color);
+		//imshow("max_color", _max_color);
 	}
 		// 敌方颜色是蓝色时
 	else {
@@ -191,7 +195,7 @@ vector<matched_rect> ArmorDetector::findTarget() {
 
 	// br是直接在_max_color上寻找的轮廓////只检测最外围，max_color是setimage里的找到两灯条的二值化图片
 	//findContours(_max_color, contours_max, hierarchy, CV_RETR_EXTERNAL , CV_CHAIN_APPROX_SIMPLE);
-	findContours(_max_color, contours_max, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
+	findContours(_max_color, contours_max, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_SIMPLE);
 	// 用直线拟合轮廓，找出符合斜率范围的轮廓
 	vector<RotatedRect> RectFirstResult;
 	for (size_t i = 0; i < contours_max.size(); ++i){
@@ -419,10 +423,8 @@ cv::RotatedRect ArmorDetector::chooseTarget(const std::vector<matched_rect> & ma
             imshow("2.jpg", roi);
 #endif
 			// 阈值可通过实际测量修改
-			if (avg > 57.00)
+			if (avg > 60.00)
 				continue;
-			if (stddev < 15.8)
-			    continue;
 		}
 		
 
