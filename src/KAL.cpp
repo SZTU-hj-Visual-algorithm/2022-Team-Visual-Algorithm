@@ -53,15 +53,6 @@ bool KAL::predict(RotatedRect &detection, kal_filter& kf, double time)
 	}
 	//����ͼ���ϼ�����Ŀ�����ڵ����������˲��õ��������ֵ--------------------------------
 	Point bp = detection.center;
-//	if (bp.x - last_center.x < 5 && bp.y - last_center.y < 5)
-//	{
-//		stop_predict++;
-//	}
-//	else
-//	{
-//		stop_predict = 0;
-//	}
-//	last_center = bp;
 	//���Ŀ����������------------------------------------------------------
 	double w, h;
 	if (type == 1)
@@ -85,24 +76,10 @@ bool KAL::predict(RotatedRect &detection, kal_filter& kf, double time)
 		depth = 109.41*pow(MIN(detection.size.width,detection.size.height), -1.066);
 	}
 	
-	
-	
 	depth = (1-filter)*m_pc(2,0) + filter*depth;
 	
-	
-	
-	//m_pc(2,0) = depth > 2.5? depth : depth*1.05;
-	
-	//printf("depth:%lf\nm_pc.3:%lf\n",depth,m_pc(2,0));
-	
-	double ra_yaw = atan2(m_pc(0,0),m_pc(2,0)) / CV_PI*180.0;
-	double ra_pitch = atan2(m_pc(1,0),m_pc(2,0)) / CV_PI*180.0;
 
-//	double aim_yaw = -ab_yaw+ ra_yaw ;
-//	double aim_pitch = -ab_pitch + ra_pitch ; //以度为单位
 
-//	double aim_x = depth * tan(aim_yaw/180.0 * PI);
-//	double aim_y = depth * tan(aim_pitch/180.0 * PI);//解出目标在绝对世界坐标系中的xy坐标
 	Mat eular = (Mat_<float>(3,1)<<-ab_pitch/180.0*CV_PI,-ab_yaw/180.0*CV_PI,ab_roll/180.0*CV_PI);
 	Mat rotated_mat;
 	Eigen::Matrix<double,3,3> rotated_matrix;
@@ -113,55 +90,22 @@ bool KAL::predict(RotatedRect &detection, kal_filter& kf, double time)
 	if (t == -1)
 	{
 		t = time;
+		double height = get_gravity(m_pc);
+		double ra_yaw = atan2(m_pc(0,0),m_pc(2,0)) / CV_PI*180.0;
+		double ra_pitch = atan2(m_pc(1,0) - height,m_pc(2,0)) / CV_PI*180.0;
 		send.yaw = ra_yaw - ab_yaw;
 		send.pitch = ra_pitch - ab_pitch;
 		kf.Xk_1[0] = m_pd(0,0);
 		kf.Xk_1[3] = m_pd(1,0);
-		last_yaw = ra_yaw - ab_yaw;
+		//last_yaw = ra_yaw - ab_yaw;
 		circle(_src,bp,7,Scalar(0,0,255),4);
 		imshow("src_kal",_src);
 //		last_aim_pitch = ra_pitch - ab_pitch;
 //		last_aim_yaw = ra_yaw - ab_yaw;
 		return true;
 	}
-	
-	/*if (last_ct.x == -1 && last_ct.y == -1)
-	{
-		last_ct.x = bp.x;
-		last_ct.y = bp.y;
-	}*/
-	/*else
-	{
-		if (bp.x - last_ct.x < -10.0)
-		{
-			sp_reset(kf);
-		}
-	}*/
 
-//	if (aim_yaw - last_aim_yaw < 5 && aim_pitch - last_aim_pitch < 5)
-//	{
-//		stop_predict++;
-//	}
-//	else
-//	{
-//		stop_predict = 0;
-//	}
-//
-	/*if (last_aim_yaw ==0 && last_aim_pitch ==0)
-	{
-		last_aim_pitch = ra_pitch;
-		last_aim_yaw = ra_yaw;
-	}*/
-	
-	
-	//-------------------------------------------------------------------------
-	/*if (abs(last_ct.x - bp.x) < 10)
-	{
-		double v = kf.Xk_1[1];
-		double a = kf.Xk_1[2];
-		kf.Xk_1[1] = -(v/abs(v))*0.0001;
-		kf.Xk_1[2] = -(a/abs(a))*0.001;
-	}*/
+
 	Eigen::Matrix<double, 2, 1> measured;
 	measured << m_pd(0,0), m_pd(1,0);
 	
@@ -176,12 +120,6 @@ bool KAL::predict(RotatedRect &detection, kal_filter& kf, double time)
 	
 	//-----------------------------------------------------------------------------------------
 	
-	
-	
-	
-	
-	
-	
 	double predict_time = m_pc.norm() / SPEED + shoot_delay;
 	//printf("speed:%lf\n",SPEED);
 	//printf("pre_time:%lf\n",predict_time);
@@ -191,50 +129,11 @@ bool KAL::predict(RotatedRect &detection, kal_filter& kf, double time)
 	
 	shoot_delay = (fabs(pre_xy[1])/1.25)*shoot_delay_init;
 	//printf("shoot_delay:%lf\n",shoot_delay);
-	/*if ((-0.066<pre_xy[1] && pre_xy[1]< 0.066) && (-0.04<pre_xy[2] && pre_xy[2]< 0.04))
-	{
-		shoot_delay = 0.47;
-	}
-	else
-	{
-		shoot_delay = 0.2916;
-	}*/
-	//预测得到的目标绝对角度----------------------------------------------------------
-
-//	double need_yaw;
-//	double need_pitch;
-	//-------------------------------------------------------------------------------
-	
-	
-	//--����������ϵ�µ�Ԥ���λӳ�䵽�������ϵ��---------------------------------------
-//	if (stop_predict >= 8)
-//	{
-//		need_yaw = corrected[0] + ab_yaw;
-//		need_pitch = corrected[3] + ab_pitch;
-//	}
-//	else
-//	{
-//	need_yaw = atan2(pre_xy[0] , depth)/PI*180.0 + ab_yaw;
-//	need_pitch = atan2(pre_xy[3] , depth)/PI*180.0 + ab_pitch;
-//	}
 	
 	
 	Eigen::Vector3d pos3 = {pre_xy[0],pre_xy[3],m_pd(2,0)};
 	//printf("x_v:%lf\tx_a:%lf\ny_v:%lf\ty_a:%lf\n",pre_xy[1],pre_xy[2],pre_xy[4],pre_xy[5]);
 	//printf("x:%lf\ty:%lf\n",pre_xy[0],pre_xy[3]);
-	/*if (-0.10 < pre_xy[1] && pre_xy[1]< 0.086)
-	{
-		send.yaw = (1.0-filter)*ra_yaw + filter*last_aim_yaw - ab_yaw;
-		send.pitch = (1.0-filter)*ra_pitch + filter*last_aim_pitch - ab_pitch;
-		last_aim_pitch = ra_pitch;
-		last_aim_yaw = ra_yaw;
-		circle(_src, bp, 7, Scalar(255,255,0),3);
-		printf("aim stoped\n");
-		imshow("src_kal",_src);
-		return true;
-	}*/
-	//last_aim_pitch = ra_pitch;
-	//last_aim_yaw = ra_yaw;
 	pos3 = rotated_matrix.inverse()*pos3;
 	pos3 = {pos3[0],pos3[1],depth};
 
@@ -257,11 +156,8 @@ bool KAL::predict(RotatedRect &detection, kal_filter& kf, double time)
 	}
 	//-----̧ǹ����----------------------------------------------------------------------
 	//printf("pos3.No3:%f\t%f\n",pos3[2]);
-	double del_ta = pow(SPEED, 4) + 2 * 9.8 * pos3(1, 0) * SPEED * SPEED - 9.8 * 9.8 * pos3(2, 0) * pos3(2, 0);
 	
-	double t_2 = (9.8 * pos3(1, 0) + SPEED * SPEED - sqrt(del_ta)) / (0.5 * 9.8 * 9.8);
-	
-	double height = 0.5 * 9.8 * t_2;
+	double height = get_gravity(pos3);
 	//printf("height:%f\n",height);
 	//------------------------------------------------------------------------------------
 #ifdef draw_height
@@ -274,27 +170,11 @@ bool KAL::predict(RotatedRect &detection, kal_filter& kf, double time)
 #ifdef show_circle
 	imshow("src_kal",_src);
 #endif
-	
-	
-	//-----����ǶȺ���Ҫ���͸���ص�����------------------------------------------------
-	//�������нǶȶ���תΪ�Ƕ���
-	
-	
+
 	send.yaw = atan2(pos3(0, 0), pos3(2, 0))/CV_PI * 180.0 - ab_yaw;//atan2�ĽǶȷ�Χ��-180~180���պ����нǶȶ��и���,������
-	
-	/*if (-0.086 < pre_xy[1] && pre_xy[1]< 0.086)
-	{
-		send.yaw = 0.2 * last_yaw + 0.8 * send.yaw;
-	}
-	else
-	{
-		send.yaw = 0.01*last_yaw + 0.99 * send.yaw;
-	}*/
+
 	double xishu = 0.78 * (pos3(2,0)/1.92);
 	send.pitch = atan2(pos3(1, 0) - height*xishu , pos3(2, 0))/CV_PI * 180.0 - ab_pitch;
-	
-	//send.yaw = ra_yaw - ab_yaw;
-	//send.pitch = ra_pitch - ab_pitch;
 	//-----------------------------------------------------------------------------------
 	
 	return true;

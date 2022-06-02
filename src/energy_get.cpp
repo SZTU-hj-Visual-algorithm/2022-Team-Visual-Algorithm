@@ -111,7 +111,7 @@ bool energy_pre::energy_predict_aim(long int now_time, bool small_energy) {
 	
 	double angle, depth;
 	Eigen::Vector3d ap,ap_c;
-	ap = pnp_get_pc(pp,0.230,0.127);
+	ap = pnp_get_pc(pp,0.220,0.122);
 	ap_c = pnp_get_pc(p,w_std,h_std);
 	if (ap_c(2,0) > 10.5)
 	{

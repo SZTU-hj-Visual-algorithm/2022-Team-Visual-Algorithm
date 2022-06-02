@@ -3,9 +3,7 @@
 #include <Eigen/Dense>
 #include "robot_state.h"
 //#include <opencv2/video/tracking.hpp>
-
 #include "kal_filter.hpp"
-#define PI 3.141592654
 
 using namespace cv;
 
@@ -26,12 +24,11 @@ private:
 	
 	float t = -1;
 
-//	int stop_predict = 0;
 	
 	//double last_aim_yaw = 0;
 	//double last_aim_pitch = 0;
 	//cv::Point last_ct = {-1,-1};
-	float last_yaw=0;
+//	float last_yaw=0;
 	
 	float shoot_delay_init = 0.2609;
 	float shoot_delay = shoot_delay_init;
@@ -58,7 +55,6 @@ public:
 	{
 		return F * pc / depth;
 	}
-	
 	Mat _src;
 	int type;
 //	int send_flag = 0;
@@ -69,11 +65,19 @@ public:
 	};
 	
 	information send;
-	
-//	float ab_pitch = 0.0;
-//	float ab_yaw = 0.0;
-//	float ab_roll = 0.0;
-//	float SPEED = 26.5;
+	inline double get_gravity(Eigen::Vector3d &pos3)
+	{
+	    //printf("pos3.No3:%f\t%f\n",pos3[2]);
+	    double del_ta = pow(SPEED, 4) + 2 * 9.8 * pos3(1, 0) * SPEED * SPEED - 9.8 * 9.8 * pos3(2, 0) * pos3(2, 0);
+
+	    double t_2 = (9.8 * pos3(1, 0) + SPEED * SPEED - sqrt(del_ta)) / (0.5 * 9.8 * 9.8);
+
+	    double height = 0.5 * 9.8 * t_2;
+	    //printf("height:%f\n",height);
+
+	    return height;
+	}
+
 	
 	
 };

@@ -1,39 +1,24 @@
-/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/liyankuan/CLionProjects/视觉有大符最新代码
--- The C compiler identification is GNU 9.4.0
--- The CXX compiler identification is GNU 9.4.0
--- Check for working C compiler: /usr/bin/cc
--- Check for working C compiler: /usr/bin/cc -- works
+"E:\clion(c++)\CLion 2021.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" F:\SZTU-hj-algorithm\2022-Team-Visual-Algorithm
+-- The C compiler identification is GNU 8.1.0
+-- The CXX compiler identification is GNU 8.1.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
+-- Check for working C compiler: E:/Mingw/mingw64/bin/gcc.exe - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
--- Check for working CXX compiler: /usr/bin/c++
--- Check for working CXX compiler: /usr/bin/c++ -- works
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: E:/Mingw/mingw64/bin/g++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Found OpenCV: /usr (found suitable version "3.4.7", minimum required is "3.4.7") 
--- Found X11: /usr/include   
--- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
--- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
--- Looking for gethostbyname
--- Looking for gethostbyname - found
--- Looking for connect
--- Looking for connect - found
--- Looking for remove
--- Looking for remove - found
--- Looking for shmat
--- Looking for shmat - found
--- Looking for IceConnectionNumber in ICE
--- Looking for IceConnectionNumber in ICE - found
+-- Found OpenCV: E:/OpenCV3.4.8/new_build (found suitable version "3.4.8", minimum required is "3.4.7") 
 -- OpenCV library status:
---     version: 3.4.7
---     include path: /usr/include;/usr/include/opencv
+--     version: 3.4.8
+--     include path: E:/OpenCV3.4.8/new_build;E:/OpenCV3.4.8/opencv-3.4.8/include;E:/OpenCV3.4.8/opencv-3.4.8/include/opencv;E:/OpenCV3.4.8/opencv-3.4.8/modules/core/include;E:/OpenCV3.4.8/opencv-3.4.8/modules/flann/include;E:/OpenCV3.4.8/opencv-3.4.8/modules/imgproc/include;E:/OpenCV3.4.8/opencv-3.4.8/modules/ml/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/phase_unwrapping/include;E:/OpenCV3.4.8/opencv-3.4.8/modules/photo/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/plot/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/reg/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/surface_matching/include;E:/OpenCV3.4.8/opencv-3.4.8/modules/video/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/xphoto/include;E:/OpenCV3.4.8/opencv-3.4.8/modules/dnn/include;E:/OpenCV3.4.8/opencv-3.4.8/modules/features2d/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/fuzzy/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/hfs/include;E:/OpenCV3.4.8/opencv-3.4.8/modules/imgcodecs/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/line_descriptor/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/saliency/include;E:/OpenCV3.4.8/opencv-3.4.8/modules/shape/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/text/include;E:/OpenCV3.4.8/opencv-3.4.8/modules/videoio/include;E:/OpenCV3.4.8/opencv-3.4.8/modules/calib3d/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/datasets/include;E:/OpenCV3.4.8/opencv-3.4.8/modules/highgui/include;E:/OpenCV3.4.8/opencv-3.4.8/modules/objdetect/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/rgbd/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/stereo/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/structured_light/include;E:/OpenCV3.4.8/opencv-3.4.8/modules/superres/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/tracking/include;E:/OpenCV3.4.8/opencv-3.4.8/modules/videostab/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/xfeatures2d/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/ximgproc/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/xobjdetect/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/aruco/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/bgsegm/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/bioinspired/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/ccalib/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/dnn_objdetect/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/dpm/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/face/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/optflow/include;E:/OpenCV3.4.8/opencv-3.4.8/modules/stitching/include;E:/OpenCV3.4.8/opencv-3.4.8/modules/world/include;E:/OpenCV3.4.8/opencv_contrib-3.4.8/modules/img_hash/include;E:/OpenCV3.4.8/opencv-3.4.8/modules/ts/include
 -- Eigen3 library status:
---     version: 3.3.7
---     include path: /usr/include/eigen3
+--     version: 3.4.0
+--     include path: E:/Eigen3.4.0/include/eigen3
 --     include path11: 
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/liyankuan/CLionProjects/视觉有大符最新代码/cmake-build-debug
+-- Build files have been written to: F:/SZTU-hj-algorithm/2022-Team-Visual-Algorithm/cmake-build-debug

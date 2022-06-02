@@ -191,7 +191,7 @@ vector<matched_rect> ArmorDetector::findTarget() {
 
 	// br是直接在_max_color上寻找的轮廓////只检测最外围，max_color是setimage里的找到两灯条的二值化图片
 	//findContours(_max_color, contours_max, hierarchy, CV_RETR_EXTERNAL , CV_CHAIN_APPROX_SIMPLE);
-	findContours(_max_color, contours_max, CV_RETR_EXTERNAL, CV_CHAIN_APPROX_SIMPLE);
+	findContours(_max_color, contours_max, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
 	// 用直线拟合轮廓，找出符合斜率范围的轮廓
 	vector<RotatedRect> RectFirstResult;
 	for (size_t i = 0; i < contours_max.size(); ++i){
@@ -419,8 +419,10 @@ cv::RotatedRect ArmorDetector::chooseTarget(const std::vector<matched_rect> & ma
             imshow("2.jpg", roi);
 #endif
 			// 阈值可通过实际测量修改
-			if (avg > 60.00)
+			if (avg > 57.00)
 				continue;
+			if (stddev < 15.8)
+			    continue;
 		}
 		
 
