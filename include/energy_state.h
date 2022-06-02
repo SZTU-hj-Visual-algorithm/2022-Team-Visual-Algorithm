@@ -77,13 +77,11 @@ public:
 	//上一时刻角速度,在代码里有些地方是作为当前时刻的角度存在的
 	double l_angle = 0.0;
 	bool pnp_flip_wh = false;
-	
-	//上一时刻的角度,在代码里有些地方是作为当前时刻的角度存在的
-	double last_angle = 0.0;
+
 	
 //	int cr_count = 0;
 	//换象限判断，判断当前点在圆心左边还是右边
-	int pos = 0;//0在左,1在右
+//	int pos = 0;//0在左,1在右
 	
 	int get_direct(cv::Point &now_p);//获取大符转动方向
 	
@@ -94,7 +92,7 @@ public:
 	
 	void make_safe(cv::Rect &rect, cv::Mat &src);
 	
-	
+
 	static inline bool center_area(std::vector<cv::Point> contour1,std::vector<cv::Point> contour2)
 	{
 		return cv::contourArea(contour1) > cv::contourArea(contour2);

@@ -86,6 +86,7 @@ public:
 	double measured(cv::Point& xy);//观测函数,就是观测当前距离开始转过的角度
 	
 //	double keep_pi_2(double angle);//保持在-pi～pi间
+    bool cal_dela_angle();
 	
 	void hit_reset();
 	

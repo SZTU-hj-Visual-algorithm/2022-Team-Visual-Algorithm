@@ -308,3 +308,17 @@ double energy_pre::measured(cv::Point& xy) //重写
 	return measure_angle;
 }
 
+bool energy_pre::cal_dela_angle()
+{
+    double dela_dis = sqrt((Aim_armor.x-last_dt_p.x)*(Aim_armor.x-last_dt_p.x)+(Aim_armor.y-last_dt_p.y)*(Aim_armor.y-last_dt_p.y));
+    double angle = 2*asin((dela_dis/2.0)/radius);
+    if (angle > 72)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+

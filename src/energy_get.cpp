@@ -70,7 +70,7 @@ bool energy_pre::energy_predict_aim(long int now_time, bool small_energy) {
 	{
 		t = ((double)(now_time - start_time)) / getTickFrequency();
 //		cout<<"总时间："<<t<<endl;
-		if (t>2.415)
+		if (cal_dela_angle())
 		{
 			hit = false;
 			hited = 0;
