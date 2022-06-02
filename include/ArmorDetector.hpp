@@ -69,8 +69,8 @@ struct ArmorParam {
 		near_face_v = 100;
 		max_lr_rate = 1.99;
 		max_wh_ratio = 5.02;
-		min_wh_ratio = 1.03;
-		small_armor_wh_threshold = 3.3;
+		min_wh_ratio = 1.13;
+		small_armor_wh_threshold = 2.96;
 		bin_cls_thres = 166;
 		target_max_angle = 20;
 	}

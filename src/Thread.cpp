@@ -106,7 +106,8 @@ void* Armor_Kal(void* PARAM)
 		int lin_is_get;
 		lin_is_get = true;
 		lin_is_get = port.get_Mode1(mode_temp, lin[0], lin[1], lin[2], lin[3],shibie.enermy_color);
-		//printf("mode:%x\n",mode_temp);
+		printf("mode:%x\n",shibie.enermy_color);
+		printf("speed:%lf\n",lin[3]);
 		if (mode_temp == 0x21)
 		{
 			RotatedRect mubiao_get = shibie.getTargetAera(src_copy, 0, 0);
@@ -288,7 +289,7 @@ void* Kal_predict(void* PARAM)
 				}
 				else
 				{
-					if(pan_wu<=8)
+					if(pan_wu<=10)
 					{
 						
 						vdata = { -ji_pitch, -ji_yaw, 0x31 };

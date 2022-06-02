@@ -130,45 +130,45 @@ iostream
 CRC_Check.h
 ../include/CRC_Check.h
 
-/home/dji/Desktop/a_miaosuanv8.2/main4.cpp
+/home/dji/Desktop/a_miaosuanv9.1/main4.cpp
 camera.h
-/home/dji/Desktop/a_miaosuanv8.2/camera.h
+/home/dji/Desktop/a_miaosuanv9.1/camera.h
 ArmorDetector.hpp
-/home/dji/Desktop/a_miaosuanv8.2/ArmorDetector.hpp
+/home/dji/Desktop/a_miaosuanv9.1/ArmorDetector.hpp
 KAl.h
-/home/dji/Desktop/a_miaosuanv8.2/KAl.h
+/home/dji/Desktop/a_miaosuanv9.1/KAl.h
 opencv2/core/cvstd.hpp
 -
 CRC_Check.h
-/home/dji/Desktop/a_miaosuanv8.2/CRC_Check.h
+/home/dji/Desktop/a_miaosuanv9.1/CRC_Check.h
 serialport.h
-/home/dji/Desktop/a_miaosuanv8.2/serialport.h
+/home/dji/Desktop/a_miaosuanv9.1/serialport.h
 X11/Xlib.h
 -
 Thread.hpp
-/home/dji/Desktop/a_miaosuanv8.2/Thread.hpp
+/home/dji/Desktop/a_miaosuanv9.1/Thread.hpp
 
-/home/dji/Desktop/a_miaosuanv8.2/src/ArmorDetector.cpp
+/home/dji/Desktop/a_miaosuanv9.1/src/ArmorDetector.cpp
 ArmorDetector.hpp
-/home/dji/Desktop/a_miaosuanv8.2/src/ArmorDetector.hpp
+/home/dji/Desktop/a_miaosuanv9.1/src/ArmorDetector.hpp
 opencv2/imgproc/imgproc.hpp
-/home/dji/Desktop/a_miaosuanv8.2/src/opencv2/imgproc/imgproc.hpp
+/home/dji/Desktop/a_miaosuanv9.1/src/opencv2/imgproc/imgproc.hpp
 iostream
 -
 queue
 -
 opencv2/dnn/dnn.hpp
-/home/dji/Desktop/a_miaosuanv8.2/src/opencv2/dnn/dnn.hpp
+/home/dji/Desktop/a_miaosuanv9.1/src/opencv2/dnn/dnn.hpp
 
-/home/dji/Desktop/a_miaosuanv8.2/src/CRC_Check.cpp
+/home/dji/Desktop/a_miaosuanv9.1/src/CRC_Check.cpp
 CRC_Check.h
-/home/dji/Desktop/a_miaosuanv8.2/src/CRC_Check.h
+/home/dji/Desktop/a_miaosuanv9.1/src/CRC_Check.h
 stdio.h
 -
 
-/home/dji/Desktop/a_miaosuanv8.2/src/KAL.cpp
+/home/dji/Desktop/a_miaosuanv9.1/src/KAL.cpp
 KAl.h
-/home/dji/Desktop/a_miaosuanv8.2/src/KAl.h
+/home/dji/Desktop/a_miaosuanv9.1/src/KAl.h
 opencv2/calib3d.hpp
 -
 opencv2/imgproc/imgproc.hpp
@@ -176,47 +176,47 @@ opencv2/imgproc/imgproc.hpp
 opencv2/core/eigen.hpp
 -
 
-/home/dji/Desktop/a_miaosuanv8.2/src/Thread.cpp
+/home/dji/Desktop/a_miaosuanv9.1/src/Thread.cpp
 Thread.hpp
-/home/dji/Desktop/a_miaosuanv8.2/src/Thread.hpp
+/home/dji/Desktop/a_miaosuanv9.1/src/Thread.hpp
 cstdio
 -
 opencv2/opencv.hpp
 -
 
-/home/dji/Desktop/a_miaosuanv8.2/src/camera.cpp
+/home/dji/Desktop/a_miaosuanv9.1/src/camera.cpp
 camera.h
-/home/dji/Desktop/a_miaosuanv8.2/src/camera.h
+/home/dji/Desktop/a_miaosuanv9.1/src/camera.h
 iostream
 -
 
-/home/dji/Desktop/a_miaosuanv8.2/src/energy_get.cpp
+/home/dji/Desktop/a_miaosuanv9.1/src/energy_get.cpp
 energy_predict.h
-/home/dji/Desktop/a_miaosuanv8.2/src/energy_predict.h
+/home/dji/Desktop/a_miaosuanv9.1/src/energy_predict.h
 energy_state.h
-/home/dji/Desktop/a_miaosuanv8.2/src/energy_state.h
+/home/dji/Desktop/a_miaosuanv9.1/src/energy_state.h
 opencv2/opencv.hpp
 -
 iostream
 -
 
-/home/dji/Desktop/a_miaosuanv8.2/src/energy_predict.cpp
+/home/dji/Desktop/a_miaosuanv9.1/src/energy_predict.cpp
 energy_predict.h
-/home/dji/Desktop/a_miaosuanv8.2/src/energy_predict.h
+/home/dji/Desktop/a_miaosuanv9.1/src/energy_predict.h
 
-/home/dji/Desktop/a_miaosuanv8.2/src/energy_state.cpp
+/home/dji/Desktop/a_miaosuanv9.1/src/energy_state.cpp
 energy_state.h
-/home/dji/Desktop/a_miaosuanv8.2/src/energy_state.h
+/home/dji/Desktop/a_miaosuanv9.1/src/energy_state.h
 energy_predict.h
-/home/dji/Desktop/a_miaosuanv8.2/src/energy_predict.h
+/home/dji/Desktop/a_miaosuanv9.1/src/energy_predict.h
 vector
 -
 Eigen/Dense
 -
 
-/home/dji/Desktop/a_miaosuanv8.2/src/serialport.cpp
+/home/dji/Desktop/a_miaosuanv9.1/src/serialport.cpp
 serialport.h
-/home/dji/Desktop/a_miaosuanv8.2/src/serialport.h
+/home/dji/Desktop/a_miaosuanv9.1/src/serialport.h
 stdio.h
 -
 

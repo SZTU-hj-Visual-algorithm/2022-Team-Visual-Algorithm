@@ -6,5 +6,5 @@ CXX_FLAGS =  -pthread   -std=c++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /usr/local/include -isystem /usr/local/include/opencv -I/usr/local/include/eigen3 -I/home/dji/Desktop/a_miaosuanv8.2/include -I/home/dji/Desktop/a_miaosuanv8.2/include/camera 
+CXX_INCLUDES = -isystem /usr/local/include -isystem /usr/local/include/opencv -I/usr/local/include/eigen3 -I/home/dji/Desktop/a_miaosuanv9.1/include -I/home/dji/Desktop/a_miaosuanv9.1/include/camera 
 

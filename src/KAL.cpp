@@ -290,8 +290,8 @@ bool KAL::predict(RotatedRect &detection, kal_filter& kf, double time)
 	{
 		send.yaw = 0.01*last_yaw + 0.99 * send.yaw;
 	}*/
-	double xishu = 0.3 * (pos3(2,0)/2.1);
-	send.pitch = atan2(pos3(1, 0) + 0.075 - height*xishu , pos3(2, 0))/CV_PI * 180.0 - ab_pitch;
+	double xishu = 0.78 * (pos3(2,0)/1.92);
+	send.pitch = atan2(pos3(1, 0) - height*xishu , pos3(2, 0))/CV_PI * 180.0 - ab_pitch;
 	
 	//send.yaw = ra_yaw - ab_yaw;
 	//send.pitch = ra_pitch - ab_pitch;

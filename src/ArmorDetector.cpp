@@ -94,7 +94,7 @@ void ArmorDetector::setImage(const cv::Mat & src){
 	
 	
 	int thres_max_color_red = 46;
-	int thres_max_color_blue = 46;
+	int thres_max_color_blue = 146;
 	
 	_max_color = cv::Mat(_src.size(), CV_8UC1, cv::Scalar(0));
 	
@@ -137,7 +137,7 @@ void ArmorDetector::setImage(const cv::Mat & src){
 		
 		//_max_color = _max_color & thres_whole;  // _max_color获得了清晰的二值图
 		dilate(_max_color, _max_color, element);
-		//imshow("max_color", _max_color);
+		imshow("max_color", _max_color);
 	}
 		// 敌方颜色是蓝色时
 	else {
@@ -170,7 +170,7 @@ void ArmorDetector::setImage(const cv::Mat & src){
 		//imshow("color", _max_color);
 		//_max_color = _max_color & thres_whole;  // _max_color获得了清晰的二值图
 		dilate(_max_color, _max_color, element);
-		//imshow("max_color", _max_color);
+		imshow("max_color", _max_color);
 	}
 	
 	////////////////////////////// end /////////////////////////////////////////
