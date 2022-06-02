@@ -68,9 +68,9 @@ bool energy_pre::energy_predict_aim(long int now_time, bool small_energy) {
 	}
 	else
 	{
-		t = ((double)(now_time - start_time))/getTickFrequency();
+		t = ((double)(now_time - start_time)) / getTickFrequency();
 //		cout<<"总时间："<<t<<endl;
-		if (t>2.408)
+		if (t>2.415)
 		{
 			hit = false;
 			hited = 0;
@@ -100,11 +100,11 @@ bool energy_pre::energy_predict_aim(long int now_time, bool small_energy) {
 	if (count == 0) {
 		last_p = Aim_armor;
 		count++;
-	} else if (count == 10) {
+	} else if (count == 8) {
 		direct = get_direct(Aim_armor);
 		
 		count++;
-	} else if (count< 10)
+	} else if (count< 8)
 	{
 		count++;
 	}
@@ -128,7 +128,7 @@ bool energy_pre::energy_predict_aim(long int now_time, bool small_energy) {
 		return false;
 	}
 	else {
-		if ((R_center.x!=0)&&(R_center.y!=0)&&(depth>5)&&(depth<14))
+		if ((R_center.x!=0)&&(R_center.y!=0)&&(depth>5)&&(depth<13))
 		{
 			angle = measured(Aim_armor);
 //			cout<<"观测值："<<angle<<endl;
