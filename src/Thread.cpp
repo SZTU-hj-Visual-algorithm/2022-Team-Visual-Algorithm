@@ -21,7 +21,7 @@ form send_data;
 
 Mat ka_src_get;
 
-SerialPort port("/dev/ttyUSB0");
+SerialPort port("/dev/ttyUSB");
 
 void* Build_Src(void* PARAM)
 {
@@ -106,6 +106,7 @@ void* Armor_Kal(void* PARAM)
 		int lin_is_get;
 		lin_is_get = true;
 		lin_is_get = port.get_Mode1(mode_temp, lin[0], lin[1], lin[2], lin[3],shibie.enermy_color);
+		//mode_temp = 0x22;
 		printf("mode:%x\n",shibie.enermy_color);
 		printf("speed:%lf\n",lin[3]);
 		if (mode_temp == 0x21)
@@ -321,17 +322,17 @@ void* Kal_predict(void* PARAM)
 				}				
 				else if (is_send == 0x32)
 				{
-					if (pan_wu <= 13)
-					{
-						printf("dafu_yaw:%f\ndafu_pitch:%f\npan_wu:%d\n", -ka.ab_yaw, -ka.ab_pitch, pan_wu);
-						vdata = { -ka.ab_pitch, -ka.ab_yaw, 0x31 };
-						pan_wu++;
-					}
-					else
-					{
-						vdata = { 0.0f, 0.0f, 0x32};
+					//if (pan_wu <= 2)
+					//{
+					//	printf("dafu_yaw:%f\ndafu_pitch:%f\npan_wu:%d\n", -ka.ab_yaw, -ka.ab_pitch, pan_wu);
+					//	vdata = { -ka.ab_pitch, -ka.ab_yaw, 0x31 };
+					//	pan_wu++;
+					//}
+					//else
+					//{
+					//	vdata = { 0.0f, 0.0f, 0x32};
 						
-					}
+					//}
 				}				
 				port.TransformData(vdata);
 				port.send();

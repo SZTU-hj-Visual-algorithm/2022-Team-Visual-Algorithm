@@ -104,6 +104,7 @@ double energy_pre::predict(double t, double dt, bool pre_not, bool samll_energy)
 {
 	if (samll_energy)
 	{
+		printf("small energy!!!\n");
 		if (pre_not)
 		{
 			F = 1 + dt/t;
@@ -121,6 +122,7 @@ double energy_pre::predict(double t, double dt, bool pre_not, bool samll_energy)
 	}
 	else
 	{
+		printf("big energy!!!\n");
 		if (pre_not)
 		{
 			double F1 = 0.913 * sin(1.942 * t) + 1.177;

@@ -63,7 +63,7 @@ bool SerialPort::get_Mode1(int &mode, float &pitch, float &yaw, float &roll, flo
     if (result == -1)
     {
 	//reload("/dev/ttyUSB");
-	fd = open("/dev/ttyS0", O_RDWR | O_NOCTTY | O_NDELAY);
+	fd = open("/dev/ttyUSB", O_RDWR | O_NOCTTY | O_NDELAY);
 
        	speed = BAUDRATE;
        	databits = 8;
@@ -81,6 +81,8 @@ bool SerialPort::get_Mode1(int &mode, float &pitch, float &yaw, float &roll, flo
     }
 
     bytes = read(fd, rdata, 44);
+    tcflush(fd, TCIFLUSH);
+    int k=0;
     int i=0;
     for(;i<44;i++)
     {
@@ -120,9 +122,9 @@ bool SerialPort::get_Mode1(int &mode, float &pitch, float &yaw, float &roll, flo
 
 		    color = (int)rdata[19+i];
 	
-	    
-	    
-		    tcflush(fd, TCIFLUSH);
+	    		
+		    //tcflush(fd, TCIFLUSH);
+
 		    //printf("11pitch:%f\n",pitch);
 		    //printf("11yao:%f\n",yaw);
 		    //printf("liroll:%f\n",roll);

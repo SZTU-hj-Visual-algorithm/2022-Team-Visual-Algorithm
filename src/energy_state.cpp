@@ -80,7 +80,7 @@ Point energy::detect_aim(Mat& img)
 	{
 		for (int i = 0; i < img_all; i++)
 		{
-			if (*mat_head - *(mat_head + 2) > 121)
+			if (*mat_head - *(mat_head + 2) > 88)
 				*bin_head = 255;
 			mat_head += 3;
 			bin_head++;

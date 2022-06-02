@@ -1,3 +1,3 @@
-/home/hsy/桌面/new_new/a_miaosuan_v3.1/build/CMakeFiles/rebuild_cache.dir
-/home/hsy/桌面/new_new/a_miaosuan_v3.1/build/CMakeFiles/run.dir
-/home/hsy/桌面/new_new/a_miaosuan_v3.1/build/CMakeFiles/edit_cache.dir
+/home/dji/Desktop/视觉有大符最新代码/build/CMakeFiles/edit_cache.dir
+/home/dji/Desktop/视觉有大符最新代码/build/CMakeFiles/run.dir
+/home/dji/Desktop/视觉有大符最新代码/build/CMakeFiles/rebuild_cache.dir

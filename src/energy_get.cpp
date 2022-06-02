@@ -100,11 +100,11 @@ bool energy_pre::energy_predict_aim(long int now_time, bool small_energy) {
 	if (count == 0) {
 		last_p = Aim_armor;
 		count++;
-	} else if (count == 8) {
+	} else if (count == 10) {
 		direct = get_direct(Aim_armor);
 		
 		count++;
-	} else if (count< 8)
+	} else if (count< 10)
 	{
 		count++;
 	}
