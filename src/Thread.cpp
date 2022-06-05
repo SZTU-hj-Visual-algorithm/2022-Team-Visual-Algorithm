@@ -161,20 +161,6 @@ void* Armor_Kal(void* PARAM)
 				pthread_cond_signal(&cond_ka);
 				pthread_mutex_unlock(&mutex_ka);
 			}
-
-			//VisionData vdata;
-			//if (E_predicter.energy_detect(src))
-			//{
-			//	vdata = { -E_predicter.E_pitch, -E_predicter.E_yaw, 0x31 };
-			//	port.TransformData(vdata);
-			//	port.send();
-			//}
-			//else
-			//{
-			//	vdata = { -E_predicter.E_pitch, -E_predicter.E_yaw, 0x32 };
-			//	port.TransformData(vdata);
-			//	port.send();
-			//}
 		}
 		else if (mode_temp == 0x23)
 		{
@@ -330,7 +316,7 @@ void* Kal_predict(void* PARAM)
 					//}
 					//else
 					//{
-					//	vdata = { 0.0f, 0.0f, 0x32};
+					vdata = { 0.0f, 0.0f, 0x32};
 						
 					//}
 				}				

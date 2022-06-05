@@ -56,12 +56,8 @@ public:
 	float E_yaw = 0;//yaw
 
 
-//	float SPEED = 26.0;
-//	float ab_yaw = 0;
-//	float ab_pitch = 0;
-//	float ab_roll = 0;
 	
-	double shoot_delay = 0.5711;
+	double shoot_delay = 0.5751;
 	
 	cv::Point start_p = {-1,-1};
 	cv::Point start_c = {-1,-1};
