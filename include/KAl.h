@@ -78,6 +78,14 @@ public:
 	    return height;
 	}
 
+
+	inline void get_send(Eigen::Vector3d &pos, double &height)
+	{
+	    double xishu = 0.78 * (pos(2,0)/1.92);
+	    send.yaw = atan2(pos(0,0),pos(2,0)) / CV_PI*180.0 - ab_yaw;
+	    send.pitch = atan2(pos(1,0) - height * xishu,pos(2,0)) / CV_PI*180.0 - ab_pitch;
+	}
+
 	
 	
 };

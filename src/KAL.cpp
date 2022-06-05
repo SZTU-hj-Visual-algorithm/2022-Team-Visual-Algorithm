@@ -91,10 +91,11 @@ bool KAL::predict(RotatedRect &detection, kal_filter& kf, double time)
 	{
 		t = time;
 		double height = get_gravity(m_pc);
-		double ra_yaw = atan2(m_pc(0,0),m_pc(2,0)) / CV_PI*180.0;
-		double ra_pitch = atan2(m_pc(1,0) - height,m_pc(2,0)) / CV_PI*180.0;
-		send.yaw = ra_yaw - ab_yaw;
-		send.pitch = ra_pitch - ab_pitch;
+//		double ra_yaw = atan2(m_pc(0,0),m_pc(2,0)) / CV_PI*180.0;
+//		double ra_pitch = atan2(m_pc(1,0) - height,m_pc(2,0)) / CV_PI*180.0;
+//		send.yaw = ra_yaw - ab_yaw;
+//		send.pitch = ra_pitch - ab_pitch;
+        get_send(m_pc,height);
 		kf.Xk_1[0] = m_pd(0,0);
 		kf.Xk_1[3] = m_pd(1,0);
 		//last_yaw = ra_yaw - ab_yaw;
@@ -171,10 +172,11 @@ bool KAL::predict(RotatedRect &detection, kal_filter& kf, double time)
 	imshow("src_kal",_src);
 #endif
 
-	send.yaw = atan2(pos3(0, 0), pos3(2, 0))/CV_PI * 180.0 - ab_yaw;//atan2�ĽǶȷ�Χ��-180~180���պ����нǶȶ��и���,������
-
-	double xishu = 0.78 * (pos3(2,0)/1.92);
-	send.pitch = atan2(pos3(1, 0) - height*xishu , pos3(2, 0))/CV_PI * 180.0 - ab_pitch;
+//	send.yaw = atan2(pos3(0, 0), pos3(2, 0))/CV_PI * 180.0 - ab_yaw;//atan2�ĽǶȷ�Χ��-180~180���պ����нǶȶ��и���,������
+//
+//	double xishu = 0.78 * (pos3(2,0)/1.92);
+//	send.pitch = atan2(pos3(1, 0) - height*xishu , pos3(2, 0))/CV_PI * 180.0 - ab_pitch;
+    get_send(pos3,height);
 	//-----------------------------------------------------------------------------------
 	
 	return true;
