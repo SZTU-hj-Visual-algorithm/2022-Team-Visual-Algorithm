@@ -31,8 +31,8 @@ using namespace std;
 #define CmdID0 0x00; //关闭视觉
 #define CmdID1 0x01; //识别红色
 #define CmdID2 0x02; //识别蓝色
-#define CmdID3 0x03; //小幅
-#define CmdID4 0x04; //大幅
+#define CmdID3 0x23; //小幅
+#define CmdID4 0x22; //大幅
 
 //串口的相关参数
 #define BAUDRATE 115200//波特率

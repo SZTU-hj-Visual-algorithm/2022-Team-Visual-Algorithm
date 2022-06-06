@@ -272,7 +272,7 @@ cv::Point energy_pre::gravity_finish(cv::Point& pps,Eigen::Vector3d &ap, double 
 //	std::cout<<"抬枪补偿:"<<height<<std::endl;
 	Eigen::Vector3d ap_g = {ap_pre(0,0),ap_pre(1,0) - height,depth};
 	E_pitch = atan2(ap_pre(1,0) + 0.055 - height*1.055, depth)/CV_PI*180.0;
-	E_yaw = atan2(ap_pre(0,0) , depth)/CV_PI*180.0 - 0.24;
+	E_yaw = atan2(ap_pre(0,0)/* + 0.44 */, depth)/CV_PI*180.0;
 	
 	Eigen::Vector3d ap_pu = pc_to_pu(ap_g,depth);//ap_g(2,0)是距离
 	
@@ -312,7 +312,7 @@ bool energy_pre::cal_dela_angle()
 {
     double dela_dis = sqrt((Aim_armor.x-last_dt_p.x)*(Aim_armor.x-last_dt_p.x)+(Aim_armor.y-last_dt_p.y)*(Aim_armor.y-last_dt_p.y));
     double angle = (2*asin((dela_dis/2.0)/radius))/CV_PI*180.0;
-    if (angle > 70)
+    if (angle > 69)
     {
         return true;
     }

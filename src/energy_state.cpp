@@ -126,19 +126,20 @@ Point energy::detect_aim(Mat& img)
 				Point en_center = c_rect.center;
 				double temp_area = temp_rect.size.width*temp_rect.size.height;
 				double area = c_rect.size.width *c_rect.size.height;
-				if (/*(area > temp_area) &&*/ ((c_rect.size.width / c_rect.size.height )<1.15) && ((c_rect.size.width / c_rect.size.height )>0.85))
+				double rotat_wh = c_rect.size.width > c_rect.size.height ? c_rect.size.width/c_rect.size.height : c_rect.size.height/c_rect.size.width;
+				if (rotat_wh<1.18)
 				{
 //					Mat mean, stdDev;
 //					double avg,stddev;
 //					meanStdDev(img(cnt_r),mean,stdDev);
 //					double en_dis = sqrt((en_center.x - R_center.x)*(en_center.x - R_center.x)+(en_center.y - R_center.y)*(en_center.y - R_center.y));
-//					double dis_dela = sqrt((c_rect.center.x - R_center.x)*(c_rect.center.x-R_center.x) + (c_rect.center.y - R_center.y)*(c_rect.center.y-R_center.y));
+					double dis_dela = sqrt((en_center.x - last_dt_p.x)*(en_center.x-last_dt_p.x) + (en_center.y - last_dt_p.y)*(en_center.y-last_dt_p.y));
 
-//					if (dis_dela < 50)
-//					{
-					centers.push_back(cnts[i]);
-					find_c = true;
-//					}
+					if ((dis_dela < 85)&&(dis_dela > 260))
+					{
+                        centers.push_back(cnts[i]);
+                        find_c = true;
+					}
 				}
 			}
 		}
@@ -240,7 +241,7 @@ Point energy::detect_aim(Mat& img)
 		want_center.x = (c_x + c_x + c_w) / 2;
 		want_center.y = (c_y + c_y + c_h) / 2;
 		double want_dis = sqrt((want_center.x-aim.x)*(want_center.x-aim.x)+(want_center.y-aim.y)*(want_center.y-aim.y));
-		if ((want_dis < 270)&&(want_dis > 85))
+		if ((want_dis < 260)&&(want_dis > 85))
 		{
 			R_center.x = want_center.x;
 			R_center.y = want_center.y;

@@ -103,7 +103,7 @@ void* Armor_Kal(void* PARAM)
 		//lin[3] = 25.0;
 		bool small_energy = false;
 		int lin_is_get;
-		lin_is_get = true;
+		//lin_is_get = true;
 		lin_is_get = port.get_Mode1(mode_temp, lin[0], lin[1], lin[2], lin[3],shibie.enermy_color);
 		//mode_temp = 0x22;
 		printf("mode:%x\n",shibie.enermy_color);
