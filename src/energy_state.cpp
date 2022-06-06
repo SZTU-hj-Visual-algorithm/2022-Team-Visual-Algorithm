@@ -135,7 +135,7 @@ Point energy::detect_aim(Mat& img)
 //					double en_dis = sqrt((en_center.x - R_center.x)*(en_center.x - R_center.x)+(en_center.y - R_center.y)*(en_center.y - R_center.y));
 					double dis_dela = sqrt((en_center.x - last_dt_p.x)*(en_center.x-last_dt_p.x) + (en_center.y - last_dt_p.y)*(en_center.y-last_dt_p.y));
 
-					if ((dis_dela < 85)&&(dis_dela > 260))
+					if ((dis_dela > 85)&&(dis_dela < 260))
 					{
                         centers.push_back(cnts[i]);
                         find_c = true;
