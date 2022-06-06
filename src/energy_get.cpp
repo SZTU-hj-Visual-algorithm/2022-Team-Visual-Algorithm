@@ -16,7 +16,7 @@ using namespace std;
 bool energy_pre::energy_detect(Mat &src, int color) {
 	
 	Rect r(210,200,840,824);
-	Mat img = src(r).clone();
+	image = src(r).clone();
 	this->enermy_color = color;
 	//std::cout<<"已击中："<<hited<<std::endl;
 	//if (hited / 3 == 5) {
@@ -26,7 +26,6 @@ bool energy_pre::energy_detect(Mat &src, int color) {
 //	cout<<img.size<<endl;
 //	image = set_image(img);
 
-	image = img;
 	//目标大符装甲板检测
 	Aim_armor = detect_aim(image);
 	if (Aim_armor.x == 0 && Aim_armor.y == 0) {
