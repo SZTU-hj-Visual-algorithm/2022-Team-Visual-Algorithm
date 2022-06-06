@@ -294,7 +294,7 @@ double energy_pre::measured(cv::Point& xy) //重写
 	double angle = 2 * asin(dis_st/radius);
 	
 	
-	if (angle > 2.95)
+	if (angle > 2.98)
 	{
 		flip_angle = true;
 	}
@@ -311,7 +311,7 @@ double energy_pre::measured(cv::Point& xy) //重写
 bool energy_pre::cal_dela_angle()
 {
     double dela_dis = sqrt((Aim_armor.x-last_dt_p.x)*(Aim_armor.x-last_dt_p.x)+(Aim_armor.y-last_dt_p.y)*(Aim_armor.y-last_dt_p.y));
-    double angle = 2*asin((dela_dis/2.0)/radius);
+    double angle = (2*asin((dela_dis/2.0)/radius))/CV_PI*180.0;
     if (angle > 70)
     {
         return true;
