@@ -30,7 +30,6 @@ void* Build_Src(void* PARAM)
 	printf("camera_open\n");
 	if (camera_warper->init())
 	{
-		printf("1\n");
 		while (is_continue && !(waitKey(10) == 27))
 		{
 			if (camera_warper->read_frame_rgb())
