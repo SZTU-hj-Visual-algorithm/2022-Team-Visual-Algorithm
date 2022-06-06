@@ -63,7 +63,7 @@ bool SerialPort::get_Mode1(int &mode, float &pitch, float &yaw, float &roll, flo
     if (result == -1)
     {
 	//reload("/dev/ttyUSB");
-	fd = open("/dev/ttyUSB", O_RDWR | O_NOCTTY | O_NDELAY);
+	fd = open("/dev/ttyUSB0", O_RDWR | O_NOCTTY | O_NDELAY);
 
        	speed = BAUDRATE;
        	databits = 8;

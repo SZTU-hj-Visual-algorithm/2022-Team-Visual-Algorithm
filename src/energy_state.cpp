@@ -145,7 +145,7 @@ Point energy::detect_aim(Mat& img)
 		
 	}
 //	imshow("img",img);
-	if (hit_c/3 - hited/3 == 1) {
+	if (hit_c/3 - hited/3 >= 1) {
 		hit = true;
 		hited = hit_c;
 		//printf("yidazhong_energy                                                       :%d\n",hited);

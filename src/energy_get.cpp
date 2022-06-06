@@ -72,10 +72,21 @@ bool energy_pre::energy_predict_aim(long int now_time, bool small_energy) {
 //		cout<<"总时间："<<t<<endl;
 		if (cal_dela_angle())
 		{
-			hit = false;
-			hited = 0;
-			reset();
-			return false;
+		    if (hit)
+		    {
+		        //		cout<<"累计时间："<<t<<endl;
+		        //		cout<<"hit(上一发是否打中了)："<<hit<<endl;
+		        hit_reset();
+		        hit = false;//上一时刻发弹打中了，不用return，继续这一时刻的预测即可
+		    }
+		    else
+		    {
+		        hit = false;
+		        hited = 0;
+		        reset();
+		        return false;
+		    }
+
 		}
 //		std::cout<<"总时间："<<t<<endl;
 		dt = ((double) (now_time - last_time)) / getTickFrequency();
@@ -83,13 +94,7 @@ bool energy_pre::energy_predict_aim(long int now_time, bool small_energy) {
 		last_time = now_time;
 	}
 	
-	if (hit)
-	{
-//		cout<<"累计时间："<<t<<endl;
-//		cout<<"hit(上一发是否打中了)："<<hit<<endl;
-		hit_reset();
-		hit = false;//上一时刻发弹打中了，不用return，继续这一时刻的预测即可
-	}
+
 	
 	if (start_p.x == -1 && start_p.y == -1)
 	{
@@ -139,7 +144,6 @@ bool energy_pre::energy_predict_aim(long int now_time, bool small_energy) {
 			double cor = correct(angle);//更新步
 			//std::cout<<"更新角度："<<cor<<std::endl;
 			cv::Point pre_aim;
-
 			double p_t =sqrt(ap(0,0)*ap(0,0)+ap(1,0)*ap(1,0)+depth*depth) / SPEED;
 			predict_angle = predict(t , p_t + shoot_delay, false,small_energy);
 //			cout<<predict_angle<<endl;

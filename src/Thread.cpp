@@ -21,7 +21,7 @@ form send_data;
 
 Mat ka_src_get;
 
-SerialPort port("/dev/ttyUSB");
+SerialPort port("/dev/ttyUSB0");
 
 void* Build_Src(void* PARAM)
 {
@@ -69,8 +69,8 @@ void* Build_Src(void* PARAM)
 void* Armor_Kal(void* PARAM)
 {
 	ArmorDetector shibie = ArmorDetector();
-	shibie.enermy_color = RED;
-	RotatedRect mubiao;
+//	shibie.enermy_color = RED;
+//	RotatedRect mubiao;
 	Mat src_copy;
 	long int time_count = 0;
 	energy_pre E_predicter;
@@ -133,14 +133,13 @@ void* Armor_Kal(void* PARAM)
 			ka_src_get.copyTo(quan_src);
 			quan_ab_pitch = lin[0];
 			quan_ab_yaw = lin[1];
-			quan_ab_roll = lin[2];
-			quan_speed = lin[3];
+			E_predicter.ab_roll = lin[2];
+			E_predicter.SPEED = lin[3];
 			send_data.is_get = lin_is_get;
 			time_count = getTickCount();
 			//printf("quan_pitch:%f",quan_ab_pitch);
 			//printf("quan_yaw:%f",quan_ab_yaw);
-
-			if (E_predicter.energy_detect(src, shibie.enermy_color)) 
+			if (E_predicter.energy_detect(src, shibie.enermy_color))
 			{
 				E_predicter.energy_predict_aim(time_count,small_energy);
 				pthread_mutex_lock(&mutex_ka);
@@ -169,13 +168,12 @@ void* Armor_Kal(void* PARAM)
 			ka_src_get.copyTo(quan_src);
 			quan_ab_pitch = lin[0];
 			quan_ab_yaw = lin[1];
-			quan_ab_roll = lin[2];
-			quan_speed = lin[3];
+			E_predicter.ab_roll = lin[2];
+			E_predicter.SPEED = lin[3];
 			send_data.is_get = lin_is_get;
 			time_count = getTickCount();
 			//printf("quan_pitch:%f",quan_ab_pitch);
 			//printf("quan_yaw:%f",quan_ab_yaw);
-			
 			if (E_predicter.energy_detect(src, shibie.enermy_color)) //
 			{
 				if (E_predicter.energy_predict_aim(time_count,small_energy))
@@ -217,11 +215,8 @@ void* Armor_Kal(void* PARAM)
 void* Kal_predict(void* PARAM)
 {
 	VisionData vdata;
-	robot_state robo_init;
-	int Armor_type = 1;
 	KAL ka;
 	kal_filter kf;
-	int mode_temp;
 	double time_count = 0;
 	//SerialPort port("/dev/ttyUSB"); //d
 	//port.initSerialPort(); //d
