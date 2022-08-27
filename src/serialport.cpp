@@ -90,7 +90,7 @@ bool SerialPort::get_Mode1(int &mode, float &pitch, float &yaw, float &roll, flo
 	{
 	    if(Verify_CRC8_Check_Sum(rdata+i, 3))
 	    {
-		mode  = (int)rdata[1];
+		mode  = (int)rdata[1+i];
 
 		if(Verify_CRC16_Check_Sum(rdata+i,22))
 		{

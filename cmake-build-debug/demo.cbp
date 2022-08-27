@@ -5,7 +5,7 @@
 		<Option title="demo"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\opencv-4.5.4\;CMake Files\opencv-4.5.4\opencv\;CMake Files\opencv-4.5.4\opencv\build\;CMake Files\opencv-4.5.4\opencv\build\x64\;CMake Files\opencv-4.5.4\opencv\build\x64\MinGW\;CMake Files\OpenCV3.4.8\;CMake Files\OpenCV3.4.8\new_build\;CMake Files\Eigen3.4.0\;CMake Files\Eigen3.4.0\share\;CMake Files\Eigen3.4.0\share\eigen3\;CMake Files\Eigen3.4.0\share\eigen3\cmake\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\OpenCV3.4.8\;CMake Files\OpenCV3.4.8\new_build\;CMake Files\Eigen3.4.0\;CMake Files\Eigen3.4.0\share\;CMake Files\Eigen3.4.0\share\eigen3\;CMake Files\Eigen3.4.0\share\eigen3\cmake\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="F:/SZTU-hj-algorithm/2022-Team-Visual-Algorithm/cmake-build-debug"/>
@@ -216,9 +216,6 @@
 		</Unit>
 		<Unit filename="F:/SZTU-hj-algorithm/2022-Team-Visual-Algorithm/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
-		</Unit>
-		<Unit filename="F:/SZTU-hj-algorithm/2022-Team-Visual-Algorithm/opencv-4.5.4/opencv/build/x64/MinGW/OpenCVConfig-version.cmake">
-			<Option virtualFolder="CMake Files\opencv-4.5.4\opencv\build\x64\MinGW\"/>
 		</Unit>
 		<Unit filename="F:/SZTU-hj-algorithm/2022-Team-Visual-Algorithm/OpenCV3.4.8/new_build/OpenCVConfig-version.cmake">
 			<Option virtualFolder="CMake Files\OpenCV3.4.8\new_build\"/>

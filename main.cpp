@@ -34,7 +34,7 @@ int main()
 	int mode_temp;
 	//float pitch_real;
 	//float yaw_real;
-	
+	ml.SVM_
 	
 	if (camera_warper->init())
 	{

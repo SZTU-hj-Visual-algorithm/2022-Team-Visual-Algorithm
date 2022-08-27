@@ -37,6 +37,7 @@ file(GLOB_RECURSE sourcefiles "src/*.cpp")
 #add_compile_options(-Wall -lX11)
 
 ADD_EXECUTABLE(${BIN_NAME} main4.cpp ${sourcefiles} ${X11_INCLUDE_DIR})
+
 add_definitions(-std=c++11)
 
 target_link_libraries(${BIN_NAME} ${X11_LIBRARIES})
